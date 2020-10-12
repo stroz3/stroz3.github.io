@@ -1,4 +1,4 @@
-@import "style.scss";
+@import "style";
 .footer {
     // .footer__data
     &__data {
@@ -140,3 +140,4 @@
         text-decoration: none;
     }
 }
+@import "media";

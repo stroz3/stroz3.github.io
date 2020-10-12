@@ -1,6 +1,6 @@
 @import "style";
 .header {
-    background: url(source/img/main/main_background.png) top/cover fixed;
+    background: url(../../img/main/main_background.png) top/cover fixed;
     border-bottom: 8px solid $border__bottom-color;
     // .header__inner
     &__inner {
@@ -129,3 +129,4 @@
     &__modificator {
     }
 }
+@import "media";
