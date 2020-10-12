@@ -1,0 +1,108 @@
+@import "style.scss";
+.ability {
+    background: url(/source/img/main/left-ability.png) top 0px left -40px no-repeat,
+        url(/source/img/main/right-ability.png) top 31px right -20px no-repeat;
+    background-size: 55% 70%;
+
+    margin-top: 85px;
+    // .ability__row
+    &__row {
+        border-radius: 10px;
+    }
+
+    // .ability__body
+
+    &__body {
+        margin-top: 73px;
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        border-radius: 10px;
+        color: white;
+    }
+
+    // .ability__img
+
+    &__img {
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+        background-color: white;
+        border-radius: 10px;
+        margin-right: 35px;
+        min-height: 100px;
+        min-width: 120px;
+        padding: 45px;
+        svg {
+            overflow: hidden;
+            transition: all 0.5s ease-out;
+            &:hover {
+                path {
+                    fill: #0683ca;
+                    transition: all 0.4s ease-in-out;
+                }
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    // .ability__text-lable
+
+    &__text-label {
+        font-weight: 100;
+        font-size: 20px;
+        margin-right: 30px;
+    }
+
+    // .ability__why
+
+    &__why {
+        margin-top: 175px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // .ability__main-text
+
+    &__main-text {
+        font-size: 35px;
+        line-height: 48px;
+    }
+
+    // .ability__second
+
+    &__second {
+        margin-top: 41px;
+    }
+
+    // .ability__second-text
+
+    &__second-text {
+        width: 758px;
+        font-size: 13px;
+    }
+
+    // .ability__under-text
+
+    &__under-text {
+        margin-top: 41px;
+        font-style: 500;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        color: $color_1;
+    }
+
+    // .ability__button
+
+    &__button {
+        text-align: center;
+    }
+
+    // .ability__order
+
+    &__order {
+        color: $black__color;
+    }
+}

@@ -1,0 +1,61 @@
+@import "style.scss";
+.application {
+    // .application__row
+    background: url(/source/img/main/form__back.png) top 50% left no-repeat;
+    &__row {
+        text-align: center;
+        background: $button__color;
+        width: 50%;
+        margin-left: 25%;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        padding-left: 40px;
+        padding-right: 40px;
+        border-radius: 10px;
+    }
+
+    // .application__login
+
+    &__text {
+        border: none;
+        margin-top: 22px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 12px;
+        width: 90%;
+        border-radius: 10px;
+        &:active,
+        &:hover,
+        &:focus {
+            outline: none;
+            border: none;
+        }
+    }
+
+    // .application__body
+
+    &__body {
+        border: 1px solid whitesmoke;
+        padding-top: 63px;
+        padding-bottom: 63px;
+        padding-left: 36px;
+        padding-right: 36px;
+        border-radius: 10px;
+    }
+    // .application__body
+
+    &__button {
+        margin-top: 22px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 62px;
+        padding-right: 62px;
+        border-radius: 10px;
+        background: white;
+        border: none;
+    }
+}
+.container {
+}
+.button {
+}

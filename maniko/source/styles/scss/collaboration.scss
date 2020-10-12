@@ -1,0 +1,71 @@
+@import "style.scss";
+.collaboration {
+    margin-top: 80px;
+    padding-bottom: 90px;
+    background: linear-gradient(0deg, #020c29, #020c29);
+    // .collaboration__button
+
+    &__button {
+        margin-top: 45px;
+    }
+
+    // .collaboration__label
+
+    &__label {
+    }
+
+    // .collaboration__stages
+
+    &__stages {
+        margin-top: 32px;
+    }
+
+    // .collaboration__stages-body
+
+    &__stages-body {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 90px;
+        margin-left: 76px;
+        background: url(/source/img/main/down-col.png) top 10px left 15.6% no-repeat,
+            url(/source/img/main/up-col.png) bottom 13px left 40% no-repeat,
+            url(/source/img/main/down-col.png) top 10px right 40% no-repeat,
+            url(/source/img/main/up-col.png) bottom 10px right 15.6% no-repeat;
+    }
+
+    // .collaboration__stages-text
+
+    &__stages-text {
+        position: relative;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: white;
+        &::before {
+            content: "";
+            top: -18px;
+            left: -75px;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border: 10px solid $button__color;
+            border-radius: 15px;
+            background: white;
+        }
+
+        &:nth-child(even) {
+            margin-top: 119px;
+        }
+    }
+    // ..collaboration__label-text
+
+    &__label-text {
+        margin-top: 53px;
+        font-style: normal;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: left;
+        color: white;
+    }
+}

@@ -1,0 +1,142 @@
+@import "style.scss";
+.footer {
+    // .footer__data
+    &__data {
+        padding: 40px 83px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .footer__img
+
+    &__img {
+        margin-left: 37px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 12px;
+        min-height: 30px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+        overflow: hidden;
+        transition: all 0.5s ease-out;
+        &:hover {
+            transform: scale(0.8);
+        }
+    }
+    //.footer__img-right
+    &__img-right {
+        width: 30px;
+        height: 30px;
+        margin-right: 5%;
+        padding-top: 0px;
+    }
+    //.footer__button-up
+
+    &__button-up {
+        outline: none;
+        border: none;
+        transition: all 0.4s ease-out;
+        background: transparent;
+        &:active {
+            transform: scale(0.8);
+        }
+    }
+
+    // .footer__row
+
+    &__row {
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    // .footer__rights
+
+    &__rights {
+        display: flex;
+        align-items: center;
+        background: $button__color-dark;
+        background-attachment: fixed;
+        height: 90px;
+    }
+    // .footer__row-rights
+    &__row-rights {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.contacts {
+    // .contacts__lable
+    &__lable {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+        margin-bottom: 15px;
+    }
+
+    // .contacts__body
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .contacts__sublable
+
+    &__sublable {
+        margin: 0px;
+    }
+}
+
+.help {
+    text-align: center;
+    margin-right: 50px;
+}
+.services {
+    text-align: right;
+}
+
+.footer {
+}
+
+.rights {
+    // .rights__body
+    &__body {
+        padding-left: 13px;
+    }
+    // .rights__body-text
+    &__body-text {
+        color: $light__color;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+}
+.dark__small {
+    text-decoration: none;
+    color: #000000;
+    &::before {
+        content: "";
+        bottom: -3px;
+        left: 0px;
+        width: 40%;
+        height: 2px;
+        background-color: $black__color;
+        transition: 0.2s;
+        transform: scaleX(0);
+    }
+    &:hover {
+        &::before {
+            transform: scaleX(1);
+        }
+        color: $black__color;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,120 @@
+@import "style.scss";
+
+.creation {
+    // .creation__row
+
+    &__dark {
+        margin-top: 50px;
+        padding-bottom: 63px;
+        background: $button__color-dark;
+    }
+
+    // .creation__row
+
+    &__row {
+        margin-top: 73px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .creation__left
+
+    &__left {
+        margin-top: 20px;
+    }
+
+    // .creation__button-know
+
+    &__button-know {
+        color: $black__color;
+        border-bottom: 2px solid $black__color;
+        padding-bottom: 3px;
+    }
+
+    // .creation__label-left
+    &__label-left {
+        margin-top: 50px;
+        text-align: left;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 48px;
+    }
+
+    // .creation__item-longer
+
+    &__item-longer {
+        margin-bottom: 25px;
+        &:nth-child(2) {
+            margin-top: 25px;
+            margin-bottom: 0px;
+        }
+        width: 350px;
+        height: 400px;
+        transition: all 0.5s ease-out;
+        &:hover {
+            transform: scale(1.1);
+        }
+        border-radius: 10px;
+    }
+
+    // .creation__item-smaller
+
+    &__item-smaller {
+        border-radius: 10px;
+        transition: all 0.5s ease-out;
+        &:hover {
+            transform: scale(1.1);
+        }
+        width: 350px;
+        height: 350px;
+    }
+
+    // .creation__center
+
+    &__center {
+    }
+
+    // .creation__right
+
+    &__right {
+        margin-top: 20px;
+    }
+    // .creation__button
+
+    &__button {
+        margin-top: 60px;
+    }
+
+    // .creation__order
+
+    &__order {
+        float: left;
+        color: $black__color;
+        margin-top: 0px;
+    }
+
+    // .creation__button
+
+    &__button-more {
+        padding-top: 20px;
+        float: right;
+    }
+}
+.first {
+    background: url(/source/img/main/left-longer.png) no-repeat top/cover;
+}
+.second {
+    background: url(/source/img/main/left-smaller.png) no-repeat top/cover;
+}
+.third {
+    background: url(/source/img/main/center-smaller.png) no-repeat top/cover;
+}
+.fourth {
+    background: url(/source/img/main/center-longer.png) no-repeat top/cover;
+}
+.fifth {
+    background: url(/source/img/main/right-longer.png) no-repeat top/cover;
+}
+.sixth {
+    background: url(/source/img/main/right-smaller.png) no-repeat top/cover;
+}
