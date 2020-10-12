@@ -1,1 +1,443 @@
-.slick-slider div:focus{outline:0}body{overflow-x:hidden;background:#333;color:#fff}.yellow{position:relative;text-decoration:none}.yellow:before{content:"";bottom:-7px;left:0;position:absolute;width:98%;height:2px;background-color:#d1a954;transition:.2s;transform:scaleX(0)}.yellow:hover{text-decoration:none}.yellow:hover:before{transform:scaleX(1)}.button{text-transform:uppercase;font-size:18px;color:#fff;background-color:#d1a954;padding:10px 43px}.button:hover{background-color:rgba(209,169,84,.9)}.theater{margin-top:-25px;background:url(source/img/header/main-bg.png) top/cover no-repeat}.header__text-row{display:flex;justify-content:space-between;padding-top:40px}.header__text-left a{text-transform:uppercase;margin-right:50px}.header__mobile-menu{display:none;position:fixed;background-color:rgba(51,51,51,.9);-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);top:0;left:-300px;padding-top:80px;width:300px;min-height:800px;height:100vh;z-index:2;text-align:right;transition:ease-in .2999s}.header__mobile-menu-active{left:0}.header__menu-button{background:0 0;display:none;position:fixed;z-index:200;top:36px;left:20px;width:50px;height:50px;transition:ease-in-out .37s}.header__menu-button:hover{border-radius:50%;transition:ease-in-out .3s;background-color:rgba(0,0,0,.2)}.header__menu-span{position:absolute;z-index:200;top:26px;left:10px;width:20px;height:2px;background-color:#fff}.header__menu-span:after,.header__menu-span:before{position:absolute;top:50%;margin-top:-1px;margin-left:-10px;left:50%;width:20px;height:2px;background-color:#fff}.header__menu-span:after,.header__menu-span:before{content:"";display:block;transition:ease .2s}.header__menu-span:before{transform:translateY(-5px);width:30px}.header__menu-span:after{transform:translateY(5px);width:12px}.header__menu-active{left:220px}.header__menu-active span{height:0;left:14px}.header__menu-active span:before{transform:rotate(45deg);width:20px}.header__menu-active span:after{transform:rotate(-45deg);width:20px}.header__nav{display:flex;flex-direction:column;padding-left:39px}.header__nav-item{text-align:left;transition:ease .5s;padding-top:30px;font-size:24px;font-style:normal;font-weight:700;line-height:33px;letter-spacing:0,5em}.header__nav-item:hover{transition:ease .5s;padding-left:20px}.big__theater{margin-top:185px;padding-bottom:175px}.big__theater-row{display:flex;justify-content:space-between}.big__theater-body{align-self:center}.big__theater-title{font-size:44px;font-style:normal;font-weight:700;line-height:87px}.big__theater-text-subtitle{width:70%;margin-top:40px;margin-bottom:40px;font-size:14px;font-style:normal;font-weight:400;line-height:21px}.big__theater-slide{background:url(source/img/header/opera2.png) top 20px right -30px no-repeat;width:70%;padding-bottom:20px}@media (min-width:1440px){.theater .big__theater-slide{background:url(source/img/header/opera2.png) top 20px right -50px no-repeat;width:45%;padding-bottom:20px}}@media (max-width:1199px){.theater .big__theater-slide{background:url(source/img/header/opera2.png) top 20px right -50px no-repeat;width:120%;padding-bottom:20px}.about__info-best{width:65%;margin-right:30px}.about__number{margin-right:0;width:30%}.Maecenas__item-form{width:60%}.Maecenas__item-guard{margin-top:50px;display:flex;justify-content:space-between}}@media (max-width:990px){.theater .header__text-row{display:block;padding-top:40px}.theater .header__text-left a{text-transform:uppercase;margin-right:30px}.theater .header__text-right{margin-top:35px;text-align:center}.theater .big__theater-slide{display:none}.about__info-best{width:70%;margin-right:30px}.about__number{width:50%}.about__house-img{display:none}.our__accordion-img img{transition:ease 1s}.our__accordion-img img:hover{transform:scale(1.1)}.our__accordion-img img:hover~.our__accordion-title{top:-20%}.our__accordion-img img:hover~.our__accordion-subtitle{bottom:-40%}.partners__item-top svg:last-child{margin-top:12px}.partners__item-down svg:last-child{margin-top:12px}.Maecenas__row{flex-wrap:wrap;width:100%}.Maecenas__item-form{width:80%}.Maecenas__body-title{display:flex;justify-content:space-between;width:100%;order:2;margin-top:70px}.Maecenas__item-right{text-align:right;margin-top:0}.Maecenas__body-form{order:1}}@media (max-width:767px){.theater .header__text-left{display:none}.theater .header__text-right{margin-right:-3%;margin-top:10px;text-align:right}.theater .header__menu-button{display:block}.theater .header__mobile-menu{display:block}.about__info-best{width:100%}.about__number{margin-top:40px;width:100%}.about__number-img{display:flex;justify-content:space-around}.about__info-item{text-align:center;display:block}.about__number-subimg:first-child{margin-top:25px}.about__number-subimg:last-child{margin-top:30px}.our__title-text{font-size:38px}.our__accordion-img img{transition:ease 1s}.our__accordion-img img:hover{transform:scale(1.1)}.our__accordion-img img:hover~.our__accordion-title{top:-20%}.our__accordion-img img:hover~.our__accordion-subtitle{bottom:-40%}.best__img-years{font-size:56px}.best__img-text{font-size:26px}.partners__item-top svg{margin-top:15px}.partners__item-top svg:last-child{display:none}.partners__item-down svg{margin-top:15px}.partners__item-down svg:last-child{display:none}.Maecenas__body-input{width:45%;margin-left:0;margin-right:0;margin-top:0;margin-bottom:40px}.Maecenas__item-form{justify-content:space-between;width:100%}.Maecenas__form-row{display:block}}@media (max-width:575px){.theater .header__text-row{padding-top:40px}.theater .header__text-left{display:none}.theater .header__text-right{margin-right:3%}.theater .big__theater-title-text{font-size:55px}.theater .big__theater-text-subtitle{width:100%}.our__accordion-img img{transition:ease 1s}.our__accordion-img img:hover{transform:scale(1.1)}.our__accordion-img img:hover~.our__accordion-title{top:-20%}.our__accordion-img img:hover~.our__accordion-subtitle{bottom:-40%}.best__img-row{display:flex}.best__img-years{font-size:46px;margin-right:20px;margin-left:10px}.best__img-years p{margin-top:-20px}.best__img-text{font-size:15px}.best__img-body{align-self:center;width:100%}.best__img-criticalscore svg{width:50%}.partners__item-top svg{padding-left:30px}.partners__item-down svg{display:none}.Maecenas__title-text{font-size:38px}.Maecenas__item-guard{display:flex;flex-direction:column;text-align:center}.Maecenas__small-form{order:2;margin-top:10px;width:100%}.Maecenas__button{order:1;width:50%;margin-left:25%}.Maecenas__body-title{font-size:1px}}
+.slick-slider div:focus {
+    outline: 0;
+}
+body {
+    overflow-x: hidden;
+    background: #333;
+    color: #fff;
+}
+.yellow {
+    position: relative;
+    text-decoration: none;
+}
+.yellow:before {
+    content: "";
+    bottom: -7px;
+    left: 0;
+    position: absolute;
+    width: 98%;
+    height: 2px;
+    background-color: #d1a954;
+    transition: 0.2s;
+    transform: scaleX(0);
+}
+.yellow:hover {
+    text-decoration: none;
+}
+.yellow:hover:before {
+    transform: scaleX(1);
+}
+.button {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fff;
+    background-color: #d1a954;
+    padding: 10px 43px;
+}
+.button:hover {
+    background-color: rgba(209, 169, 84, 0.9);
+}
+.theater {
+    margin-top: -25px;
+    background: url(../../img/header/main-bg.png) top/cover no-repeat;
+}
+.header__text-row {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+.header__text-left a {
+    text-transform: uppercase;
+    margin-right: 50px;
+}
+.header__mobile-menu {
+    display: none;
+    position: fixed;
+    background-color: rgba(51, 51, 51, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    top: 0;
+    left: -300px;
+    padding-top: 80px;
+    width: 300px;
+    min-height: 800px;
+    height: 100vh;
+    z-index: 2;
+    text-align: right;
+    transition: ease-in 0.2999s;
+}
+.header__mobile-menu-active {
+    left: 0;
+}
+.header__menu-button {
+    background: 0 0;
+    display: none;
+    position: fixed;
+    z-index: 200;
+    top: 36px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    transition: ease-in-out 0.37s;
+}
+.header__menu-button:hover {
+    border-radius: 50%;
+    transition: ease-in-out 0.3s;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.header__menu-span {
+    position: absolute;
+    z-index: 200;
+    top: 26px;
+    left: 10px;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+}
+.header__menu-span:after,
+.header__menu-span:before {
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    margin-left: -10px;
+    left: 50%;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+}
+.header__menu-span:after,
+.header__menu-span:before {
+    content: "";
+    display: block;
+    transition: ease 0.2s;
+}
+.header__menu-span:before {
+    transform: translateY(-5px);
+    width: 30px;
+}
+.header__menu-span:after {
+    transform: translateY(5px);
+    width: 12px;
+}
+.header__menu-active {
+    left: 220px;
+}
+.header__menu-active span {
+    height: 0;
+    left: 14px;
+}
+.header__menu-active span:before {
+    transform: rotate(45deg);
+    width: 20px;
+}
+.header__menu-active span:after {
+    transform: rotate(-45deg);
+    width: 20px;
+}
+.header__nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 39px;
+}
+.header__nav-item {
+    text-align: left;
+    transition: ease 0.5s;
+    padding-top: 30px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0, 5em;
+}
+.header__nav-item:hover {
+    transition: ease 0.5s;
+    padding-left: 20px;
+}
+.big__theater {
+    margin-top: 185px;
+    padding-bottom: 175px;
+}
+.big__theater-row {
+    display: flex;
+    justify-content: space-between;
+}
+.big__theater-body {
+    align-self: center;
+}
+.big__theater-title {
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 87px;
+}
+.big__theater-text-subtitle {
+    width: 70%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+}
+.big__theater-slide {
+    background: url(../../img/header/opera2.png) top 20px right -30px no-repeat;
+    width: 70%;
+    padding-bottom: 20px;
+}
+@media (min-width: 1440px) {
+    .theater .big__theater-slide {
+        background: url(../../img/header/opera2.png) top 20px right -50px no-repeat;
+        width: 45%;
+        padding-bottom: 20px;
+    }
+}
+@media (max-width: 1199px) {
+    .theater .big__theater-slide {
+        background: url(../../img/header/opera2.png) top 20px right -50px no-repeat;
+        width: 120%;
+        padding-bottom: 20px;
+    }
+    .about__info-best {
+        width: 65%;
+        margin-right: 30px;
+    }
+    .about__number {
+        margin-right: 0;
+        width: 30%;
+    }
+    .Maecenas__item-form {
+        width: 60%;
+    }
+    .Maecenas__item-guard {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 990px) {
+    .theater .header__text-row {
+        display: block;
+        padding-top: 40px;
+    }
+    .theater .header__text-left a {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+    .theater .header__text-right {
+        margin-top: 35px;
+        text-align: center;
+    }
+    .theater .big__theater-slide {
+        display: none;
+    }
+    .about__info-best {
+        width: 70%;
+        margin-right: 30px;
+    }
+    .about__number {
+        width: 50%;
+    }
+    .about__house-img {
+        display: none;
+    }
+    .our__accordion-img img {
+        transition: ease 1s;
+    }
+    .our__accordion-img img:hover {
+        transform: scale(1.1);
+    }
+    .our__accordion-img img:hover ~ .our__accordion-title {
+        top: -20%;
+    }
+    .our__accordion-img img:hover ~ .our__accordion-subtitle {
+        bottom: -40%;
+    }
+    .partners__item-top svg:last-child {
+        margin-top: 12px;
+    }
+    .partners__item-down svg:last-child {
+        margin-top: 12px;
+    }
+    .Maecenas__row {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .Maecenas__item-form {
+        width: 80%;
+    }
+    .Maecenas__body-title {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        order: 2;
+        margin-top: 70px;
+    }
+    .Maecenas__item-right {
+        text-align: right;
+        margin-top: 0;
+    }
+    .Maecenas__body-form {
+        order: 1;
+    }
+}
+@media (max-width: 767px) {
+    .theater .header__text-left {
+        display: none;
+    }
+    .theater .header__text-right {
+        margin-right: -3%;
+        margin-top: 10px;
+        text-align: right;
+    }
+    .theater .header__menu-button {
+        display: block;
+    }
+    .theater .header__mobile-menu {
+        display: block;
+    }
+    .about__info-best {
+        width: 100%;
+    }
+    .about__number {
+        margin-top: 40px;
+        width: 100%;
+    }
+    .about__number-img {
+        display: flex;
+        justify-content: space-around;
+    }
+    .about__info-item {
+        text-align: center;
+        display: block;
+    }
+    .about__number-subimg:first-child {
+        margin-top: 25px;
+    }
+    .about__number-subimg:last-child {
+        margin-top: 30px;
+    }
+    .our__title-text {
+        font-size: 38px;
+    }
+    .our__accordion-img img {
+        transition: ease 1s;
+    }
+    .our__accordion-img img:hover {
+        transform: scale(1.1);
+    }
+    .our__accordion-img img:hover ~ .our__accordion-title {
+        top: -20%;
+    }
+    .our__accordion-img img:hover ~ .our__accordion-subtitle {
+        bottom: -40%;
+    }
+    .best__img-years {
+        font-size: 56px;
+    }
+    .best__img-text {
+        font-size: 26px;
+    }
+    .partners__item-top svg {
+        margin-top: 15px;
+    }
+    .partners__item-top svg:last-child {
+        display: none;
+    }
+    .partners__item-down svg {
+        margin-top: 15px;
+    }
+    .partners__item-down svg:last-child {
+        display: none;
+    }
+    .Maecenas__body-input {
+        width: 45%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+    .Maecenas__item-form {
+        justify-content: space-between;
+        width: 100%;
+    }
+    .Maecenas__form-row {
+        display: block;
+    }
+}
+@media (max-width: 575px) {
+    .theater .header__text-row {
+        padding-top: 40px;
+    }
+    .theater .header__text-left {
+        display: none;
+    }
+    .theater .header__text-right {
+        margin-right: 3%;
+    }
+    .theater .big__theater-title-text {
+        font-size: 55px;
+    }
+    .theater .big__theater-text-subtitle {
+        width: 100%;
+    }
+    .our__accordion-img img {
+        transition: ease 1s;
+    }
+    .our__accordion-img img:hover {
+        transform: scale(1.1);
+    }
+    .our__accordion-img img:hover ~ .our__accordion-title {
+        top: -20%;
+    }
+    .our__accordion-img img:hover ~ .our__accordion-subtitle {
+        bottom: -40%;
+    }
+    .best__img-row {
+        display: flex;
+    }
+    .best__img-years {
+        font-size: 46px;
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+    .best__img-years p {
+        margin-top: -20px;
+    }
+    .best__img-text {
+        font-size: 15px;
+    }
+    .best__img-body {
+        align-self: center;
+        width: 100%;
+    }
+    .best__img-criticalscore svg {
+        width: 50%;
+    }
+    .partners__item-top svg {
+        padding-left: 30px;
+    }
+    .partners__item-down svg {
+        display: none;
+    }
+    .Maecenas__title-text {
+        font-size: 38px;
+    }
+    .Maecenas__item-guard {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .Maecenas__small-form {
+        order: 2;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .Maecenas__button {
+        order: 1;
+        width: 50%;
+        margin-left: 25%;
+    }
+    .Maecenas__body-title {
+        font-size: 1px;
+    }
+}
