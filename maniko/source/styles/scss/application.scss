@@ -1,7 +1,7 @@
 @import "style.scss";
 .application {
     // .application__row
-    background: url(/source/img/main/form__back.png) top 50% left no-repeat;
+    background: url(source/img/main/form__back.png) top 50% left no-repeat;
     &__row {
         text-align: center;
         background: $button__color;
