@@ -2399,8 +2399,9 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    padding: 0px;
-    top: 310px;
+    padding-top: 0px;
+    padding-bottom: 80px;
+    top: 340px;
   }
 
   .header__item-right a:nth-child(1) {
@@ -2423,7 +2424,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    top: 150px;
+    top: 180px;
   }
 
   .header__item-left a:nth-child(1) {
@@ -2505,6 +2506,17 @@ body {
 
   .header__item-logo-mobile {
     top: 15px;
+  }
+
+  .header__item-right {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    top: 270px;
+  }
+
+  .header__item-left {
+    padding: 0px;
+    top: 150px;
   }
 
   .first {
