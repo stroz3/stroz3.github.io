@@ -28,6 +28,9 @@ $container = document.querySelector('#container');
 $btnTabMenu = document.querySelectorAll('.menu__link-navig');
 $menuMob = $('.header__mob');
 $menuPC = $('.header__body');
+
+
+let body = document.querySelector('body');
 const animItems = document.querySelectorAll('.anim-items');
 
 // Вывод даты и времени
@@ -37,8 +40,10 @@ $textDateHeader.textContent = date
 
 //preloader
 window.onload = function () {
+    body.style.overflow = 'hidden';
     document.body.classList.add('loaded_hiding');
     window.setTimeout(function () {
+        body.style.overflow = '';
         document.body.classList.add('loaded');
         document.body.classList.remove('loaded_hiding');
     }, 500);
@@ -59,6 +64,7 @@ $mobItem.forEach(element => {
 });
 // Фунцкции открития мобМеню
 function openMenu() {
+    body.style.overflow = 'hidden';
     $container.style.top = '0px';
     $mobBtn.style.transform = 'rotate(90deg)'
     $mobMenuLeft.forEach(element => {
@@ -70,6 +76,7 @@ function openMenu() {
 }
 //Функция закрытия мобМеню
 function closeMenu() {
+    body.style.overflow = '';
     $mobBtn.classList.remove('backShow')
     $container.style.top = '-620px';
     $menuMob.addClass('out');
@@ -151,3 +158,18 @@ if (animItems.length > 0) {
         animOnScroll();
     }, 400)
 }
+// Breakpoint
+$(window).resize(function () {
+    window.resizeEvt;
+    $(window).resize(function () {
+        clearTimeout(window.resizeEvt);
+        window.resizeEvt = setTimeout(function () {
+            doneresizing();
+        }, 250);
+    });
+});
+function doneresizing() {
+    if ($(window).width() > 768) {
+        closeMenu()
+    }
+} 

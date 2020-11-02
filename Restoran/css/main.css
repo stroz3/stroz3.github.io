@@ -444,6 +444,9 @@ template {
 }
 
 .header__item-logo:hover {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
   cursor: pointer;
 }
 
@@ -483,9 +486,6 @@ template {
 }
 
 .hungry {
-  -webkit-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -973,6 +973,7 @@ template {
 .about {
   margin-top: 100px;
   text-align: center;
+  overflow: hidden;
 }
 
 .about__row {
@@ -1029,6 +1030,7 @@ template {
   width: 100%;
   text-align: center;
   color: white;
+  overflow: hidden;
 }
 
 .master__body {
@@ -1090,6 +1092,7 @@ template {
 
 .book {
   margin-top: 100px;
+  overflow: hidden;
 }
 
 .book__row {
@@ -1269,6 +1272,7 @@ template {
 
 .menu {
   margin-top: 100px;
+  overflow: hidden;
 }
 
 .menu__name {
@@ -1397,6 +1401,7 @@ template {
   text-align: center;
   margin-top: 100px;
   color: white;
+  overflow: hidden;
 }
 
 .privat__name {
@@ -1429,6 +1434,7 @@ template {
   text-align: center;
   margin-top: 100px;
   margin-bottom: 100px;
+  overflow: hidden;
 }
 
 .contact__title {
@@ -2393,7 +2399,8 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    top: 320px;
+    padding: 0px;
+    top: 310px;
   }
 
   .header__item-right a:nth-child(1) {
@@ -2434,7 +2441,7 @@ body {
   .header__item-text {
     z-index: 22222;
     font-size: 25px;
-    margin-bottom: 34px;
+    margin-bottom: 20px;
   }
 
   .header__item-text:hover {
