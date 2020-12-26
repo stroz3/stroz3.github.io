@@ -52,7 +52,6 @@ timer = () => {
                     elmnt.style.opacity = op
                 }
             }, 100);
-
         return undefined;
     }
     var seconds = Math.floor((result / 1000) % 60);
@@ -74,30 +73,19 @@ window.onload = function () {
 let log = [
     name = 'Patay',
     name = 'Патау',
-    name = 'Patay',
+    name = 'patay',
     name = 'патау',
     name = 'пту'
 ]
 let password = [
-    number = '27.12.2020',
-    number = '27122020',
-    number = '271220',
-    number = '20202712'
+    number = '27.12.2018',
+    number = '27122018',
+    number = '271218',
+    number = '20182712'
 ]
 $btnSign.addEventListener('click', () => {
-    if (valLog(log, $login.value) == true) {
-        if (valLog(password, $password.value) == false) {
-            incorrectly()
-        } else {
-            correctly()
-        }
-    }
-    else if (valLog(password, $password.value) == true) {
-        if (valLog(login, $login.value) == false) {
-            incorrectly()
-        } else {
-            correctly()
-        }
+    if (valLog(log, $login.value) && valLog(password, $password.value) == true) {
+        correctly()
     } else {
         incorrectly()
     }
@@ -146,19 +134,203 @@ correctly = () => {
             }
         }, 15);
     setTimeout(() => {
-        $heart.style.animation = "heartbeatCur 0.5s linear forwards";
+        $heart.style.animation = "heartbeatCur 1s linear forwards";
         setTimeout(() => {
             $header.style.display = 'none'
-            document.querySelector('.room').style.display = 'block'
+            SecondWave()
         }, 800);
     }, 300);
 }
+// попробовать сделать с &&
+
 // Второй блок
-document.querySelector('.room__item-right').addEventListener('click', function room(event) {
+let secRoom = document.querySelector('.room')
+SecondWave = () => {
+    secRoom.style.display = 'block'
+    setTimeout(() => {
+        let textCloud = document.querySelector('.room__item-comment');
+        addTextTo(textCloud)
+    }, 2500);
+}
+let cellar = document.querySelector('.room__item-cellar')
+let cellarBefore = document.querySelector('.room__item-before')
+cellar.addEventListener('click', room = event => {
     if (event.target) {
-        console.log('work');
+        cellarBefore.style.animation = "heartbeatCur 0.7s linear forwards";
+        setTimeout(() => {
+            secRoom.style.display = 'none'
+            document.querySelector('body').style.backgroundColor = 'black'
+            document.querySelector('.slide').style.display = 'block'
+        }, 800);
     }
 }
 )
 
-console.log(new Date(2020, 11, 27, 17, 30, 0));
+
+
+
+// Плавное появление букв
+addTextTo = elem => {
+    let i = 0, text = 'Не хочешь зайти в подвал?'
+    let timer = setInterval(function (event) {
+        elem.textContent += text[i]
+        if (++i >= text.length) clearInterval(timer)
+    }, 100);
+}
+// Карточки 
+let cardItemBack = document.querySelectorAll('.slide__item-back'),
+    cardItem = document.querySelectorAll('.slide__Card-item'),
+    cardContent = document.querySelectorAll('.slide__additional')
+
+document.querySelectorAll('.slide__button-close').forEach($el => {
+    $el.addEventListener('click', () => {
+        fadeOut('.slide__card-additional')
+        basketItems.textContent = 0
+        purse.textContent = 15
+        for (let index = 0; index < buttonBuy.length; index++) {
+            const element = buttonBuy[index];
+            element.style.backgroundColor = '#992c42'
+            element.disabled = false
+        }
+    })
+})
+
+document.querySelector('.slide__card-additional').addEventListener('click', event => {
+    event.stopPropagation();
+})
+
+cardItem.forEach($el => {
+    $el.addEventListener("click", event => {
+        event.stopPropagation();
+    })
+})
+cardItemBack.forEach($el => {
+    let cardId = $el.getAttribute('data-id')
+    $el.addEventListener("click", (event) => {
+        fadeIn('.slide__card-additional')
+        selectCardContent(cardId)
+    })
+})
+function selectCardContent(cardName) {
+    cardContent.forEach($el => {
+        $el.classList.contains(cardName) ? $el.classList.add('show') : $el.classList.remove('show')
+    })
+}
+ToogleClassTab('modal-card', cardItemBack)
+ToogleClassTab('active', cardItem)
+
+document.querySelector('.slide__Card-body').addEventListener('click', close = event => {
+    if (event.target) {
+        ToogleClassTabClose('modal-card', cardItemBack)
+        fadeOut('.slide__card-additional')
+        ToogleClassTabClose('active', cardItem)
+    }
+})
+//BuyShop
+
+let basketItems = document.querySelector('.slide__section-items'),
+    buttonBuy = document.querySelectorAll('.slide__section-button'),
+    purse = document.querySelector('#purse')
+buttonBuy.forEach(($el) => {
+    $el.addEventListener('click', (event) => {
+        let sum = 0, num = 0
+        if (event.target) {
+            if (purse.textContent <= 0) {
+                for (let index = 0; index < buttonBuy.length; index++) {
+                    const element = buttonBuy[index];
+                    element.style.backgroundColor = 'gray'
+                    element.disabled = true
+                }
+                return alert('Не хватает деньжат')
+            }
+            else if (Number($el.id) > Number(purse.textContent)) {
+                num.disabled = true
+                $el.disabled = true
+                $el.style.backgroundColor = 'gray'
+                return alert("Не хватает деньжат")
+            } else if (!Number($el.id) < Number(purse.textContent)) {
+                num = Math.max(purse.textContent -= $el.id, 0)
+                purse.textContent = num
+                sum = ++basketItems.textContent
+                basketItems.textContent = sum
+            }
+        }
+    })
+})
+// play video
+let buttonPlay = document.querySelector('.slide__additional-play'),
+    video = document.querySelector('.slide__additional-video')
+
+Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
+    get: function () {
+        return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
+    }
+})
+buttonPlay.addEventListener('click', btnPlay = (event) => {
+    if (event.target) {
+        video.play()
+        buttonPlay.style.display = 'none'
+    }
+})
+video.addEventListener('click', () => {
+    if (video.playing) {
+        buttonPlay.style.display = 'block'
+    }
+    else {
+        buttonPlay.style.display = 'none'
+    }
+})
+// функции
+function ToogleClassTab(classTab, item) {
+    item.forEach($el => {
+        $el.addEventListener('click', () => {
+            item.forEach(el => { el.classList.remove(classTab); });
+            $el.classList.add(classTab)
+        })
+    })
+}
+function ToogleClassTabClose(classTab, item) {
+    item.forEach($el => {
+        $el.classList.remove(classTab);
+    })
+}
+function fadeOut(el) {
+    let documentQer = document.querySelector(el)
+
+    var opacity = 1;
+
+    var timer = setInterval(function () {
+
+        if (opacity <= 0.1) {
+
+            clearInterval(timer);
+            documentQer.style.display = "none";
+        }
+
+        documentQer.style.animation = "MagnificationReverse 1s forwards"
+        documentQer.style.opacity = opacity;
+
+        opacity -= opacity * 0.1;
+
+    }, 10);
+
+}
+function fadeIn(el) {
+    let documentQer = document.querySelector(el)
+    var opacity = 0.01;
+
+    documentQer.style.display = "flex";
+
+    var timer = setInterval(function () {
+        if (opacity >= 1) {
+
+            clearInterval(timer);
+        }
+        documentQer.style.animation = "Magnification 1s forwards"
+        documentQer.style.opacity = opacity
+        documentQer.style.zIndex = 222
+        opacity += opacity * 0.1;
+
+    }, 1);
+
+}
