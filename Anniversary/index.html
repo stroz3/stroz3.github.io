@@ -1,1 +1,304 @@
-<!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Document</title>    <link rel="stylesheet" href="css/main.min.css">    <link rel="stylesheet" href="/chatbot/chatbot.css"></head><body style="background-color: black;">    <section class="timer">        <h2 class="timer__title" id="timer"></h2>    </section>    <header class="header">    <div class="heart__row">        <div class="heart"></div>    </div>    <div class="container">        <div class="header__row">            <div class="header__body">                <div class="header__item">                    <input type="text" id="login" placeholder="Как меня зовут" class="header__input ">                    <span class="focus-border"><i></i></span>                </div>                <div class="header__item">                    <input type="text" id="password" placeholder="День нашей годовщины" class="header__input ">                    <span class="focus-border"><i></i></span>                </div>                <button class="header__btn meet" id="btn">Войти</button>            </div>        </div>    </div></header>    <section class="room">    <div class="room__row">        <div class="room__body">            <div class="room__item-comment"></div>            <div class="room__item-left">                <picture><source srcset="img/Sany.webp" type="image/webp"><img src="img/Sany.png" alt=""></picture>            </div>            <div class="room__item-right">            </div>            <div class="room__item-cellar"><span class="room__item-before"></span></div>        </div>    </div></section>    <section class="slide">    <div class="slide__Card-row">        <div class="slide__Card-body">            <div class="slide__Card-item">                <div class="slide__item-front">                    <div class="heart-black"></div>                </div>                <div data-id='video' class="slide__item-back">                </div>            </div>            <div class="slide__Card-item">                <div class="slide__item-front">                    <div class="heart-black"></div>                </div>                <div data-id='shop' class="slide__item-back">                    <header class="slide__header">                        <div class="slide__header-body-left">                            <span class="slide__header-lorem"></span>                            <span class="slide__header-lorem"></span>                            <span class="slide__header-lorem"></span>                            <span class="slide__header-lorem">15</span>                        </div>                        <div class="slide__header-body-right">                            <button class="slide__button">X</button>                        </div>                    </header>                    <section class="slide__section">                        <div class="slide__section-row">                            <div class="slide__section-item">                                <div class="slide__section-item-lable">                                    <h2 class="slide__section-lable">Посмотреть фильм</h2>                                </div>                                <div class="slide__section-item-img watchFilms"></div>                                <div class="slide__section-item-description">                                    <p class="slide__section-price">Стоимость: 2 сердечка</p>                                </div>                                <button class="slide__section-button" id='2'>Купить</button>                            </div>                            <div class="slide__section-item">                                <div class="slide__section-item-lable">                                    <h2 class="slide__section-lable">Поцеловать</h2>                                </div>                                <div class="slide__section-item-img kiss"></div>                                <div class="slide__section-item-description">                                    <p class="slide__section-price">Стоимость: 3 сердечка</p>                                </div>                                <button class="slide__section-button" id='3'>Купить</button>                            </div>                            <div class="slide__section-item">                                <div class="slide__section-item-lable">                                    <h2 class="slide__section-lable">Одно желание</h2>                                </div>                                <div class="slide__section-item-img dream"></div>                                <div class="slide__section-item-description">                                    <p class="slide__section-price">Стоимость: 7 сердечка</p>                                </div>                                <button class="slide__section-button" id='7'>Купить</button>                            </div>                            <div class="slide__section-item">                                <div class="slide__section-item-lable">                                    <h2 class="slide__section-lable">Массаж</h2>                                </div>                                <div class="slide__section-item-img massage"></div>                                <div class="slide__section-item-description">                                    <p class="slide__section-price">Стоимость: 10 сердечка</p>                                </div>                                <button class="slide__section-button" id='10'>Купить</button>                            </div>                        </div>                    </section>                </div>            </div>            <div class="slide__Card-item">                <div class="slide__item-front">                    <div class="heart-black"></div>                </div>                <div data-id='massage' class="slide__item-back ">                    <div class="chatbot-btn">                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, ea ipsa? Laborum eveniet                        atque in commodi culpa nobis perferendis. Dolore voluptate vero assumenda dolorem ducimus                        officia impedit enim aperiam et.                    </div>                </div>            </div>            <div class="slide__card-additional">                <div class="slide__additional video ">                    <div class="slide__additional-row">                        <button class="slide__additional-play"></button>                        <video controls height="480px" weight="640px" class="slide__additional-video"                            src="img/Видео для сайта.mp4"></video>                    </div>                </div>                <div class="slide__additional shop">                    <header class="slide__header">                        <div class="slide__header-body-left">                            <span class="slide__header-lorem"></span>                            <span class="slide__header-lorem"></span>                            <span class="slide__header-lorem"></span>                            <span class="slide__header-lorem"><span class='slide__header-span' id="purse">15</span>                                сердец</span>                            <div class="slide__section-basket">                                <picture><source srcset="img/basket.webp" type="image/webp"><img src="img/basket.png" alt=""></picture>                                <span class="slide__section-items">0</span>                            </div>                        </div>                        <div class="slide__header-body-right">                            <button class="slide__button-close">X</button>                        </div>                    </header>                    <section class="slide__section">                        <div class="slide__section-row">                            <div class="slide__section-item">                                <div class="slide__section-item-lable">                                    <h2 class="slide__section-lable">Заняться любовью</h2>                                </div>                                <div class="slide__section-item-img love"></div>                                <div class="slide__section-item-description">                                    <p class="slide__section-price">Стоимость: 4 сердечка</p>                                </div>                                <button class="slide__section-button" id='4'>Купить</button>                            </div>                            <div class="slide__section-item">                                <div class="slide__section-item-lable">                                    <h2 class="slide__section-lable">Дать леща</h2>                                </div>                                <div class="slide__section-item-img lich"></div>                                <div class="slide__section-item-description">                                    <p class="slide__section-price">Стоимость: 1 сердечка</p>                                </div>                                <button class="slide__section-button" id='1'>Купить</button>                            </div>                            <div class="slide__section-item">                                <div class="slide__section-item-lable">                                    <h2 class="slide__section-lable">Обнимашки)))</h2>                                </div>                                <div class="slide__section-item-img hugs"></div>                                <div class="slide__section-item-description">                                    <p class="slide__section-price">Стоимость: 2 сердечка</p>                                </div>                                <button class="slide__section-button" id='2'>Купить</button>                            </div>                            <div class="slide__section-item">                                <div class="slide__section-item-lable">                                    <h2 class="slide__section-lable">Посмотреть фильм</h2>                                </div>                                <div class="slide__section-item-img watchFilms"></div>                                <div class="slide__section-item-description">                                    <p class="slide__section-price">Стоимость: 2 сердечка</p>                                </div>                                <button class="slide__section-button" id='2'>Купить</button>                            </div>                            <div class="slide__section-item">                                <div class="slide__section-item-lable">                                    <h2 class="slide__section-lable">Поцеловать</h2>                                </div>                                <div class="slide__section-item-img kiss"></div>                                <div class="slide__section-item-description">                                    <p class="slide__section-price">Стоимость: 3 сердечка</p>                                </div>                                <button class="slide__section-button" id='3'>Купить</button>                            </div>                            <div class="slide__section-item">                                <div class="slide__section-item-lable">                                    <h2 class="slide__section-lable">Одно желание</h2>                                </div>                                <div class="slide__section-item-img dream"></div>                                <div class="slide__section-item-description">                                    <p class="slide__section-price">Стоимость: 7 сердечка</p>                                </div>                                <button class="slide__section-button" id='7'>Купить</button>                            </div>                            <div class="slide__section-item">                                <div class="slide__section-item-lable">                                    <h2 class="slide__section-lable">Массаж</h2>                                </div>                                <div class="slide__section-item-img massage"></div>                                <div class="slide__section-item-description">                                    <p class="slide__section-price">Стоимость: 10 сердечка</p>                                </div>                                <button class="slide__section-button" id='10'>Купить</button>                            </div>                        </div>                    </section>                </div>                <div class="slide__additional massage ">                    <section class="slide__section">                        <div class="slide__section-row">                            <div class="chatbot chatbot_hidden">                                <div class="chatbot__title">                                    Chatbot                                    <span class="chatbot__close slide__button-close">×</span>                                </div>                                <div class="chatbot__wrapper">                                    <div class="chatbot__items"></div>                                </div>                                <div class="chatbot__footer">                                    <input class="chatbot__input" type="text" disabled>                                    <button class="chatbot__submit" type="button" disabled>                                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"                                            width="16" height="16">                                            <path fill="currentColor"                                                d="M476 3.2L12.5 270.6a24 24 0 002.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5a24 24 0 0042.5 15.8L282 426l124.6 52.2a24 24 0 0033-18.2l72-432A24 24 0 00476 3.2z" />                                        </svg>                                    </button>                                </div>                            </div>                        </div>                    </section>                </div>            </div>        </div>    </div></section>    <script src="js/script.min.js"></script>    <!-- FingerPrint JS -->    <script src="/chatbot/fp2.js"></script>    <!-- ChatBot JS (для поддержки всех используемых в настоящее время браузеров) -->    <script src="/chatbot/chatbot_es5.js"></script>    <script>        // 1 - Указание ключа в localstorage, в котором будет храниться отпечаток браузера        const keyLS = 'fingerprint';        // 2 - Указание URL файла, в котором находится сценарий диалога для чат-бота        const url = '/data/data-1.json';        // 3 - Указание CSS селектора кнопки, с помощью которой будем вызывать окно диалога с чат-ботом        const chatbotBtnSel = '.chatbot-btn';        // 4 - URL к chatbot.php        const urlChatbot = '/chatbot/chatbot.php';        // добавление хэша fingerprint в localstorage        let fingerprint = localStorage.getItem(keyLS);        if (!fingerprint) {            Fingerprint2.get(function (components) {                fingerprint = Fingerprint2.x64hash128(components.map(function (pair) { return pair.value }).join(), 31)                localStorage.setItem(keyLS, fingerprint)            });        }        // получение json-файла, содержащего сценарий диалога для чат-бота через AJAX        const request = new XMLHttpRequest();        request.open('GET', url, true);        request.responseType = 'json';        request.onload = function () {            const status = request.status;            if (status === 200) {                const data = request.response;                // инициализация ChatBotByItchief посредством вызова следующей функции с передачи ей нужных параметров                chatBotByItchiefInit({                    chatbotBtnSel: chatbotBtnSel,                    data: data,                    url: urlChatbot,                    keyLS: keyLS                });            } else {                console.log(status, request.response);            }        };        request.send();    </script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="/chatbot/chatbot.css">
+</head>
+
+<body style="background-color: black;">
+    <section class="timer">
+        <h2 class="timer__title" id="timer"></h2>
+    </section>
+    <header class="header">
+        <div class="heart__row">
+            <div class="heart"></div>
+        </div>
+        <div class="container">
+            <div class="header__row">
+                <div class="header__body">
+                    <div class="header__item">
+                        <input type="text" id="login" placeholder="Как меня зовут" class="header__input ">
+                        <span class="focus-border"><i></i></span>
+                    </div>
+                    <div class="header__item">
+                        <input type="text" id="password" placeholder="День нашей годовщины" class="header__input ">
+                        <span class="focus-border"><i></i></span>
+                    </div>
+                    <button class="header__btn meet" id="btn">Войти</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="room">
+        <div class="room__row">
+            <div class="room__body">
+                <div class="room__item-comment"></div>
+                <div class="room__item-left">
+                    <picture>
+                        <source srcset="img/Sany.webp" type="image/webp"><img src="img/Sany.png" alt="">
+                    </picture>
+                </div>
+                <div class="room__item-right">
+                </div>
+                <div class="room__item-cellar"><span class="room__item-before"></span></div>
+            </div>
+        </div>
+    </section>
+    <section class="slide">
+        <div class="slide__Card-row">
+            <div class="slide__Card-body">
+                <div class="slide__Card-item">
+                    <div class="slide__item-front">
+                        <div class="heart-black"></div>
+                    </div>
+                    <div data-id='video' class="slide__item-back">
+
+                    </div>
+                </div>
+                <div class="slide__Card-item">
+                    <div class="slide__item-front">
+                        <div class="heart-black"></div>
+                    </div>
+                    <div data-id='shop' class="slide__item-back">
+                        <header class="slide__header">
+                            <div class="slide__header-body-left">
+                                <span class="slide__header-lorem"></span>
+                                <span class="slide__header-lorem"></span>
+                                <span class="slide__header-lorem"></span>
+                                <span class="slide__header-lorem">15</span>
+                            </div>
+                            <div class="slide__header-body-right">
+                                <button class="slide__button">X</button>
+                            </div>
+                        </header>
+                        <section class="slide__section">
+                            <div class="slide__section-row">
+                                <div class="slide__section-item">
+                                    <div class="slide__section-item-lable">
+                                        <h2 class="slide__section-lable">Посмотреть фильм</h2>
+                                    </div>
+                                    <div class="slide__section-item-img watchFilms"></div>
+                                    <div class="slide__section-item-description">
+                                        <p class="slide__section-price">Стоимость: 2 сердечка</p>
+                                    </div>
+                                    <button class="slide__section-button" id='2'>Купить</button>
+                                </div>
+                                <div class="slide__section-item">
+                                    <div class="slide__section-item-lable">
+                                        <h2 class="slide__section-lable">Поцеловать</h2>
+                                    </div>
+                                    <div class="slide__section-item-img kiss"></div>
+                                    <div class="slide__section-item-description">
+                                        <p class="slide__section-price">Стоимость: 3 сердечка</p>
+                                    </div>
+                                    <button class="slide__section-button" id='3'>Купить</button>
+                                </div>
+                                <div class="slide__section-item">
+                                    <div class="slide__section-item-lable">
+                                        <h2 class="slide__section-lable">Одно желание</h2>
+                                    </div>
+                                    <div class="slide__section-item-img dream"></div>
+                                    <div class="slide__section-item-description">
+                                        <p class="slide__section-price">Стоимость: 7 сердечка</p>
+                                    </div>
+                                    <button class="slide__section-button" id='7'>Купить</button>
+                                </div>
+                                <div class="slide__section-item">
+                                    <div class="slide__section-item-lable">
+                                        <h2 class="slide__section-lable">Массаж</h2>
+                                    </div>
+                                    <div class="slide__section-item-img massage"></div>
+                                    <div class="slide__section-item-description">
+                                        <p class="slide__section-price">Стоимость: 10 сердечка</p>
+                                    </div>
+                                    <button class="slide__section-button" id='10'>Купить</button>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="slide__Card-item">
+                    <div class="slide__item-front">
+                        <div class="heart-black"></div>
+                    </div>
+                    <div data-id='massage' class="slide__item-back ">
+                        <div class="chatbot-btn">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, ea ipsa? Laborum
+                            eveniet
+                            atque in commodi culpa nobis perferendis. Dolore voluptate vero assumenda dolorem ducimus
+                            officia impedit enim aperiam et.
+                        </div>
+                    </div>
+                </div>
+                <div class="slide__card-additional">
+                    <div class="slide__additional video ">
+                        <div class="slide__additional-row">
+                            <button class="slide__additional-play"></button>
+                            <video controls height="480px" weight="640px" class="slide__additional-video"
+                                src="img/Видео для сайта.mp4"></video>
+                        </div>
+                    </div>
+                    <div class="slide__additional shop">
+                        <header class="slide__header">
+                            <div class="slide__header-body-left">
+                                <span class="slide__header-lorem"></span>
+                                <span class="slide__header-lorem"></span>
+                                <span class="slide__header-lorem"></span>
+                                <span class="slide__header-lorem"><span class='slide__header-span' id="purse">15</span>
+                                    сердец</span>
+                                <div class="slide__section-basket">
+                                    <picture>
+                                        <source srcset="img/basket.webp" type="image/webp"><img src="img/basket.png"
+                                            alt="">
+                                    </picture>
+                                    <span class="slide__section-items">0</span>
+                                </div>
+                            </div>
+                            <div class="slide__header-body-right">
+                                <button class="slide__button-close">X</button>
+                            </div>
+                        </header>
+                        <section class="slide__section">
+                            <div class="slide__section-row">
+                                <div class="slide__section-item">
+                                    <div class="slide__section-item-lable">
+                                        <h2 class="slide__section-lable">Дать леща</h2>
+                                    </div>
+                                    <div class="slide__section-item-img lich"></div>
+                                    <div class="slide__section-item-description">
+                                        <p class="slide__section-price">Стоимость: 1 сердечка</p>
+                                    </div>
+                                    <button class="slide__section-button" id='1'>Купить</button>
+                                </div>
+                                <div class="slide__section-item">
+                                    <div class="slide__section-item-lable">
+                                        <h2 class="slide__section-lable">Обнимашки)))</h2>
+                                    </div>
+                                    <div class="slide__section-item-img hugs"></div>
+                                    <div class="slide__section-item-description">
+                                        <p class="slide__section-price">Стоимость: 2 сердечка</p>
+                                    </div>
+                                    <button class="slide__section-button" id='2'>Купить</button>
+                                </div>
+                                <div class="slide__section-item">
+                                    <div class="slide__section-item-lable">
+                                        <h2 class="slide__section-lable">Посмотреть фильм</h2>
+                                    </div>
+                                    <div class="slide__section-item-img watchFilms"></div>
+                                    <div class="slide__section-item-description">
+                                        <p class="slide__section-price">Стоимость: 2 сердечка</p>
+                                    </div>
+                                    <button class="slide__section-button" id='2'>Купить</button>
+                                </div>
+                                <div class="slide__section-item">
+                                    <div class="slide__section-item-lable">
+                                        <h2 class="slide__section-lable">Поцеловать</h2>
+                                    </div>
+                                    <div class="slide__section-item-img kiss"></div>
+                                    <div class="slide__section-item-description">
+                                        <p class="slide__section-price">Стоимость: 3 сердечка</p>
+                                    </div>
+                                    <button class="slide__section-button" id='3'>Купить</button>
+                                </div>
+                                <div class="slide__section-item">
+                                    <div class="slide__section-item-lable">
+                                        <h2 class="slide__section-lable">Одно желание</h2>
+                                    </div>
+                                    <div class="slide__section-item-img dream"></div>
+                                    <div class="slide__section-item-description">
+                                        <p class="slide__section-price">Стоимость: 7 сердечка</p>
+                                    </div>
+                                    <button class="slide__section-button" id='7'>Купить</button>
+                                </div>
+                                <div class="slide__section-item">
+                                    <div class="slide__section-item-lable">
+                                        <h2 class="slide__section-lable">Массаж</h2>
+                                    </div>
+                                    <div class="slide__section-item-img massage"></div>
+                                    <div class="slide__section-item-description">
+                                        <p class="slide__section-price">Стоимость: 10 сердечка</p>
+                                    </div>
+                                    <button class="slide__section-button" id='10'>Купить</button>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="slide__additional massage ">
+                        <section class="slide__section">
+                            <div class="slide__section-row">
+                                <div class="chatbot chatbot_hidden">
+                                    <div class="chatbot__title">
+                                        Chatbot
+                                        <span class="chatbot__close slide__button-close">×</span>
+                                    </div>
+                                    <div class="chatbot__wrapper">
+                                        <div class="chatbot__items"></div>
+                                    </div>
+                                    <div class="chatbot__footer">
+                                        <input class="chatbot__input" type="text" disabled>
+                                        <button class="chatbot__submit" type="button" disabled>
+                                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 512 512" width="16" height="16">
+                                                <path fill="currentColor"
+                                                    d="M476 3.2L12.5 270.6a24 24 0 002.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5a24 24 0 0042.5 15.8L282 426l124.6 52.2a24 24 0 0033-18.2l72-432A24 24 0 00476 3.2z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.min.js"></script>
+    <!-- FingerPrint JS -->
+    <script src="/chatbot/fp2.js"></script>
+    <!-- ChatBot JS (для поддержки всех используемых в настоящее время браузеров) -->
+    <script src="/chatbot/chatbot_es5.js"></script>
+    <script>
+        // 1 - Указание ключа в localstorage, в котором будет храниться отпечаток браузера
+        const keyLS = 'fingerprint';
+        // 2 - Указание URL файла, в котором находится сценарий диалога для чат-бота
+        const url = '/data/data-1.json';
+        // 3 - Указание CSS селектора кнопки, с помощью которой будем вызывать окно диалога с чат-ботом
+        const chatbotBtnSel = '.chatbot-btn';
+        // 4 - URL к chatbot.php
+        const urlChatbot = '/chatbot/chatbot.php';
+        // добавление хэша fingerprint в localstorage
+        let fingerprint = localStorage.getItem(keyLS);
+        if (!fingerprint) {
+            Fingerprint2.get(function (components) {
+                fingerprint = Fingerprint2.x64hash128(components.map(function (pair) { return pair.value }).join(), 31)
+                localStorage.setItem(keyLS, fingerprint)
+            });
+        }
+        // получение json-файла, содержащего сценарий диалога для чат-бота через AJAX
+        const request = new XMLHttpRequest();
+        request.open('GET', url, true);
+        request.responseType = 'json';
+        request.onload = function () {
+            const status = request.status;
+            if (status === 200) {
+                const data = request.response;
+                // инициализация ChatBotByItchief посредством вызова следующей функции с передачи ей нужных параметров
+                chatBotByItchiefInit({
+                    chatbotBtnSel: chatbotBtnSel,
+                    data: data,
+                    url: urlChatbot,
+                    keyLS: keyLS
+                });
+            } else {
+                console.log(status, request.response);
+            }
+        };
+        request.send();
+    </script>
+</body>
+
+</html>
