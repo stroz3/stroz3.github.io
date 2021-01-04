@@ -21,8 +21,7 @@ let btnHeader = document.querySelector('.header__button'),
     tabName = null,
     tabContent = document.querySelectorAll('.gift__item')
 
-btnHeader.addEventListener('click', (e) => {
-    e.preventDefault();
+btnHeader.addEventListener('click', headerMenuToggle = (e) => {
     if (btnHeader.classList.contains('rotate')) {
         HeaderMenu.style.right = '-400px'
         btnHeader.classList.toggle('rotate')
@@ -178,7 +177,7 @@ function fadeIn(el) {
 
 }
 
-const anchors = document.querySelectorAll('a.header__menu-link')
+const anchors = document.querySelectorAll('a.sroll-link')
 
 for (let anchor of anchors) {
     anchor.addEventListener('click', function (e) {
@@ -188,7 +187,8 @@ for (let anchor of anchors) {
 
         document.querySelector(blockID).scrollIntoView({
             behavior: 'smooth',
-            block: 'start'
+            block: 'start',
         })
+        headerMenuToggle()
     })
 }
