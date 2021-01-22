@@ -1,0 +1,321 @@
+*{
+	margin: 0px;
+	padding:0px; 
+	font-family: Gilroy;
+	box-sizing: border-box;
+}
+@font-face {
+    font-family: Gilroy; /* Гарнитура шрифта */
+    src: url(fonts/Gilroy-Medium.ttf); /* Путь к файлу со шрифтом */
+   }
+body{
+	background: #E5E5E5;
+}
+header{
+	background: #ffffff;
+	display: flex;
+	height: 70px;
+	justify-content: space-between;
+	align-items: center;
+}
+.header-full{
+	display: flex;
+	align-items: center;
+}
+.logout img{
+	margin-top: 10px;
+	width: 40px;
+	cursor: pointer;
+	margin-right: 33px;
+	height: 40px;
+}
+.logos{
+	padding-left: 33px;
+}
+.calendar{
+	height: 25px;
+	display: flex;
+	align-items: center;
+}
+.calendar p{
+	font-size: 18px;
+
+}
+
+.input2{
+	height: 21px;
+	border: 0px;
+	font-size: 18px;
+    cursor: pointer;
+	background: url(img/calendar.png) no-repeat;
+	background-size: 20px;
+	width: 40px;
+	outline: 0px;
+	padding-left: 25px;
+	caret-color: transparent;
+}
+.input2::placeholder{
+color: black;
+}
+.display-none{
+	display: none;
+}
+#calend{
+	position: relative;
+	display: flex;
+}
+#calend img	{
+position: absolute;
+left: 0px;
+}
+.chassi{
+	position: absolute;
+	top: 70px;
+	left: 70px;
+	z-index: 5;
+}
+.display-block{
+display: block;
+}
+.calendar{
+	margin-left: 43px;
+	display: flex;
+}
+
+.calendar img{
+width: 18px;
+height: 18px;
+margin: auto 0;
+margin-right: 13px;
+}
+.wrapper{
+	padding-left: 33px;
+	display: flex;
+}
+.text-decoration{
+	text-decoration: line-through;
+}
+.Task-full{
+	margin-top: 30px;
+}
+.Task_list{
+	margin-left: 43px;
+	display: flex;
+	opacity: 30%;
+	height: 25px;
+}
+.All-quest{
+	margin-right: 20px;
+	padding-left:25px; 
+	padding-right: 35px;
+	background-color: #ffffff;
+	width: 380px;
+	border-radius: 10px;
+	height: 328px;
+}
+.quest-title{
+padding-bottom: 52px;
+	display: flex;
+	justify-content: space-between;
+}
+.quest-title h1{
+margin-top: 25px;
+font-size: 20px;
+}
+.quest-title img{
+height: 16px;
+margin-top: 29px;
+}
+.add-quest{
+	cursor: pointer;
+	align-items: center;
+	display: flex;
+	margin-bottom: 31px;
+}
+.add-quest img{
+	width: 16px;
+	height: 16px;
+}
+.add-quest p{
+margin-left: 14px;
+font-size: 18px;
+color:#D02B38;
+}
+.quest{
+	padding-left: 20px;
+}
+.quest h2{
+font-size: 18px;
+}
+.quest-list{
+	list-style: none;
+}
+.quest-list li{
+	display: flex;
+	margin-top: 20px;
+}
+.quest-list li img{
+width: 15px;
+margin: auto 0;
+margin-right: 10px;
+}
+.quest-full{
+	margin-right: 20px;
+	width: 380px;
+	height: 440px;
+	padding-left: 25px;
+	padding-right: 35px;
+	position: relative;
+	background-color: #ffffff;
+	border-radius: 10px;
+}
+.ul-quest{
+	padding-left: 20px;
+	font-weight: bold;
+	font-size: 18px;
+}
+.ul-quest li{
+margin-bottom: 25px;
+}
+.ul-quest li p{
+margin-left: 20px;
+}
+.save{
+position: absolute;
+left: 0px;
+bottom: 0px;
+}
+.save button{
+	cursor: pointer;
+	border: 0px;
+	outline: 0px;
+	color: #ffffff;
+    background: #0E9347;
+	border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+	font-size: 20px;
+	padding: 20px 138.5px;
+}
+.button-save button{
+	opacity: 0.6;
+	outline: 0px;
+	cursor: pointer;
+	font-size: 18px;
+border-radius: 10px;
+border: 0px;
+margin-bottom: 37px;
+background-color: #ffffff;
+	padding: 26px 118px;
+}
+.new-quest{
+	width: 380px;
+	height: 394px;
+	background: #ffffff;
+	border-radius: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.post{
+	padding-top: 30px;
+	display: flex;
+	color:#D02B38;
+	padding-bottom: 31px;
+}
+.post img{
+width: 14px;
+margin: auto 0;
+height: 14px;
+}
+.post p{
+	font-size: 18px;
+	margin-left: 14px;
+}
+.quest-input input{
+	height: 50px;
+	width: 320px;
+	border-radius: 5px;
+	border: 0px;
+	background: #F6F8F9;
+margin-bottom: 15px;
+}
+.quest-input button{
+	outline: 0px;
+	cursor: pointer;
+	padding: 15px 108px;
+	font-size: 20px;
+	border-radius: 10px;
+	border: 0px;
+	color: #ffffff;
+	background: #0E9347;
+}
+.quest-input input::placeholder{
+padding-left: 20px;
+font-size: 18px;
+}
+.links{
+	margin-top: 32px;
+}
+.links li:last-child{
+margin-bottom: 0px;
+}
+.links li{
+	margin-bottom: 20px;
+display: flex;
+}
+.links li a{
+color: #2A68BE;
+
+}
+.links li img{
+margin: auto 0;
+width: 14px;
+height: 14px;
+margin-right: 15px;
+}
+.login{
+	margin-left: 31px;
+	padding-top: 38px;
+	padding-left: 25px;
+	padding-right: 35px;
+	width: 380px;
+	height: 325px;
+	background: #ffffff;
+	border-radius: 10px;
+}
+.logo{
+	text-align: center;
+	padding-bottom: 41px;
+}
+.input-login {
+	position: relative;
+}
+.input-login input{
+	width: 320px;
+	border: 0px;
+	background: #F6F8F9;
+	border-radius: 5px;
+	height: 50px;
+}
+.input-login input::placeholder{
+	padding-left: 50px;
+}
+.input-login img{
+position: absolute;
+left: 20px;
+top: 16px;
+}
+.input-login {
+	padding-bottom: 15px;
+}
+.button-login button{
+padding: 15px 132px;
+font-size: 20px;
+color: #ffffff;
+border: 0px;
+border-radius: 10px;
+background: #0E9347;
+
+}
+#ui-datepicker-div{
+	margin-top: 24px;
+}
