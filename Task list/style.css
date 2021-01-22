@@ -14,7 +14,7 @@ body {
 header {
 	background: #ffffff;
 	display: flex;
-	height: 70px;
+	height: 60px;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -108,7 +108,7 @@ header {
 	padding-left: 25px;
 	padding-right: 35px;
 	background-color: #ffffff;
-	width: 25%;
+	width: 26%;
 	border-radius: 10px;
 	height: 300px;
 }
@@ -160,8 +160,8 @@ header {
 }
 .quest-full {
 	margin-right: 20px;
-	width: 30%;
-	height: 440px;
+	width: 26%;
+	height: 420px;
 	padding-left: 25px;
 	padding-right: 35px;
 	position: relative;
@@ -171,7 +171,7 @@ header {
 .ul-quest {
 	padding-left: 20px;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 16px;
 }
 .ul-quest li {
 	margin-bottom: 25px;
@@ -207,7 +207,7 @@ header {
 	border: 0px;
 	margin-bottom: 25px;
 	background-color: #ffffff;
-	padding: 26px;
+	padding: 25px;
 	width: 100%;
 }
 .new-quest {
