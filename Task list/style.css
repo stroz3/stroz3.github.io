@@ -45,15 +45,15 @@ header {
 }
 
 .input2 {
-	height: 21px;
+	height: 19px;
 	border: 0px;
 	font-size: 18px;
 	cursor: pointer;
 	background: url(img/calendar.png) no-repeat;
-	background-size: 20px;
+	background-size: 18px;
 	width: 40px;
 	outline: 0px;
-	padding-left: 25px;
+	margin-right: -5px;
 	caret-color: transparent;
 }
 .input2::placeholder {
@@ -150,10 +150,11 @@ header {
 	width: 25.5%;
 }
 .quest {
-	padding-left: 10px;
+	padding-left: 13px;
 }
 .quest h2 {
 	font-size: 16px;
+	padding-top: 2px;
 }
 .quest-list {
 	list-style: none;
@@ -164,7 +165,7 @@ header {
 	font-size: 14px;
 }
 .quest-list li img {
-	width: 15px;
+	width: 14px;
 	margin: auto 0;
 	margin-right: 10px;
 }
@@ -215,14 +216,14 @@ header {
 	font-size: 16px;
 	border-radius: 10px;
 	border: 0px;
-	margin-bottom: 28px;
+	margin-bottom: 33px;
 	background-color: #ffffff;
 	padding: 22px;
 	width: 100%;
 }
 .new-quest {
 	width: 100%;
-	height: 360px;
+	height: 353px;
 	background: #ffffff;
 	border-radius: 10px;
 	padding-left: 25px;
@@ -240,7 +241,7 @@ header {
 	height: 14px;
 }
 .post p {
-	font-size: 18px;
+	font-size: 16px;
 	margin-left: 14px;
 }
 .quest-input input {
@@ -266,13 +267,13 @@ header {
 }
 
 .links {
-	margin-top: 25px;
+	margin-top: 30px;
 }
 .links li:last-child {
 	margin-bottom: 0px;
 }
 .links li {
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 	display: flex;
 }
 .links li a {
@@ -330,4 +331,104 @@ header {
 }
 #ui-datepicker-div {
 	margin-top: 24px;
+}
+
+@media (max-width: 1200px) {
+	.All-quest {
+		width: 27%;
+	}
+	.quest-full {
+		width: 27%;
+	}
+	.quest-create {
+		width: 27%;
+	}
+}
+@media (max-width: 1024px) {
+	.wrapper {
+		flex-wrap: wrap;
+	}
+	.All-quest {
+		width: 44.5%;
+	}
+	.add-quest p {
+		margin-left: 8px;
+	}
+	.quest-full {
+		width: 44.5%;
+	}
+	.quest-create {
+		width: 44.5%;
+		margin-top: -66px;
+	}
+}
+@media (max-width: 768px) {
+	.wrapper {
+		flex-wrap: wrap;
+	}
+	.All-quest {
+		width: 46%;
+	}
+	.add-quest p {
+		margin-left: 8px;
+	}
+	.quest-full {
+		width: 46%;
+	}
+	.quest-create {
+		width: 46%;
+		margin-top: -66px;
+	}
+	.Task_list img {
+		width: 90px;
+	}
+	.Task_list {
+		margin-left: 30px;
+		height: 17px;
+	}
+	.logos {
+		padding-left: 12px;
+	}
+	.input2 {
+		width: 30px;
+	}
+	.logout img {
+		margin-right: 15px;
+	}
+}
+@media (max-width: 575px) {
+	.wrapper {
+		padding-left: 0px;
+		flex-direction: column;
+	}
+	.All-quest {
+		width: 70%;
+		margin: 0px auto;
+	}
+	.add-quest p {
+		margin-left: 8px;
+	}
+	.quest-full {
+		width: 70%;
+		margin: 30px auto;
+	}
+	.quest-create {
+		width: 70%;
+		margin: 0px auto;
+	}
+}
+@media (max-width: 425px) {
+	.wrapper {
+		padding-left: 0px;
+		flex-direction: column;
+	}
+	.All-quest {
+		width: 85%;
+	}
+	.quest-full {
+		width: 85%;
+	}
+	.quest-create {
+		width: 85%;
+	}
 }
