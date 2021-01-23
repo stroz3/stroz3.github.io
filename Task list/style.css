@@ -431,4 +431,7 @@ header {
 	.quest-create {
 		width: 85%;
 	}
+	.quest {
+		height: 50px;
+	}
 }
