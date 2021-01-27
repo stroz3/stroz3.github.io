@@ -5,8 +5,8 @@
 	box-sizing: border-box;
 }
 @font-face {
-	font-family: Gilroy; /* Гарнитура шрифта */
-	src: url(fonts/Gilroy-Medium.ttf); /* Путь к файлу со шрифтом */
+	font-family: Gilroy; /* Ð“Ð°Ñ€Ð½Ð¸Ñ‚ÑƒÑ€Ð° ÑˆÑ€Ð¸Ñ„Ñ‚Ð° */
+	src: url(fonts/Gilroy-Medium.ttf); /* ÐŸÑƒÑ‚ÑŒ Ðº Ñ„Ð°Ð¹Ð»Ñƒ ÑÐ¾ ÑˆÑ€Ð¸Ñ„Ñ‚Ð¾Ð¼ */
 }
 body {
 	background: #e5e5e5;
@@ -14,7 +14,7 @@ body {
 header {
 	background: #ffffff;
 	display: flex;
-	height: 65px;
+	height: 56px;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -24,16 +24,16 @@ header {
 }
 .logout img {
 	margin-top: 10px;
-	width: 35px;
+	width: 32px;
 	cursor: pointer;
-	margin-right: 33px;
-	height: 35px;
+	margin-right: 26px;
+	height: 32px;
 }
 .logos {
-	padding-left: 33px;
+	padding-left: 23px;
 }
 .logos img {
-	width: 50px;
+	width: 47px;
 }
 .calendar {
 	height: 25px;
@@ -41,16 +41,17 @@ header {
 	align-items: center;
 }
 .calendar p {
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .input2 {
-	height: 19px;
+	height: 18px;
 	border: 0px;
+	margin-top: 3px;
 	font-size: 18px;
 	cursor: pointer;
 	background: url(img/calendar.png) no-repeat;
-	background-size: 18px;
+	background-size: 16px;
 	width: 40px;
 	outline: 0px;
 	margin-right: -5px;
@@ -80,7 +81,7 @@ header {
 	display: block;
 }
 .calendar {
-	margin-left: 19px;
+	margin-left: 4px;
 	display: flex;
 }
 
@@ -91,45 +92,47 @@ header {
 	margin-right: 13px;
 }
 .wrapper {
-	padding-left: 33px;
+	padding-left: 26px;
 	display: flex;
 }
 .text-decoration {
 	text-decoration: line-through;
 }
 .Task-full {
-	margin-top: 30px;
+	margin-top: 22px;
 }
 .Task_list {
-	margin-left: 43px;
+	margin-left: 34px;
 	display: flex;
 	opacity: 30%;
-	height: 25px;
+	height: 21px;
 }
 .Task_list img {
-	width: 92%;
+	width: 82%;
 }
 .All-quest {
-	margin-right: 20px;
-	padding-left: 25px;
-	padding-right: 35px;
+	margin-right: 17px;
+	padding-left: 20px;
+	padding-right: 30px;
 	background-color: #ffffff;
-	width: 25.5%;
+	width: 22.6%;
 	border-radius: 10px;
-	height: 290px;
+	height: 264px;
 }
 .quest-title {
-	padding-bottom: 46px;
+	padding-bottom: 43px;
+	/* padding-top: 0px; */
 	display: flex;
 	justify-content: space-between;
 }
-.quest-title h1 {
+.quest-title h2 {
 	margin-top: 19px;
-	font-size: 18px;
+	font-size: 16px;
 }
+
 .quest-title img {
-	height: 16px;
-	margin-top: 22px;
+	height: 12px;
+	margin-top: 25px;
 }
 .add-quest {
 	cursor: pointer;
@@ -138,57 +141,124 @@ header {
 	margin-bottom: 25px;
 }
 .add-quest img {
-	width: 16px;
-	height: 16px;
+	width: 13px;
+	height: 13px;
 }
 .add-quest p {
-	margin-left: 14px;
-	font-size: 16px;
+	margin-left: 10px;
+	font-size: 14px;
 	color: #d02b38;
 }
 .quest-create {
-	width: 25.5%;
+	width: 22.6%;
 }
 .quest {
-	padding-left: 13px;
+	padding-left: 17px;
 }
 .quest h2 {
-	font-size: 16px;
+	font-size: 14px;
 	padding-top: 2px;
 }
 .quest-list {
 	list-style: none;
+	height: 100px;
+	overflow-y: auto;
 }
 .quest-list-li {
 	display: flex;
-	margin-top: 20px;
-	font-size: 14px;
+	margin-top: 18px;
+	font-size: 13px;
+	cursor: pointer;
+}
+.complete {
+	text-decoration: line-through;
+}
+.select {
+	color: red;
 }
 .quest-list-li img {
-	width: 15px;
-	margin: auto 0;
+	width: 12px;
+	margin: auto 0px;
 	margin-right: 10px;
 }
+.create-quest {
+	cursor: pointer;
+	width: 25px;
+	margin-right: -12px;
+	text-align: center;
+}
+.active {
+	display: block;
+}
+.todo-text {
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+}
 .quest-full {
-	margin-right: 20px;
-	width: 25.5%;
-	height: 390px;
-	padding-left: 25px;
-	padding-right: 35px;
+	margin-right: 17px;
+	width: 22.6%;
+	height: 354px;
+	padding-left: 17px;
+	padding-right: 30px;
 	position: relative;
 	background-color: #ffffff;
 	border-radius: 10px;
 }
+.full {
+	display: none;
+}
+.navCreate-enter-active,
+.navCreate-leave-active {
+	transition: all 0.3s ease;
+}
+.navCreate-enter,
+.navCreate-leave-to {
+	transform: translateY(10px);
+	opacity: 0;
+}
+.nav-create {
+	font-family: "Gilroy";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
+	position: absolute;
+	top: 55px;
+	right: 1px;
+	background: #ffffff;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.22);
+	padding: 10px 20px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.nav-create p {
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+.nav-create p:last-child {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.nav-create::after {
+	content: "";
+	position: absolute; /* Абсолютное позиционирование */
+	right: 20px;
+	top: -20px; /* Положение треугольника */
+	border: 10px solid transparent; /* Прозрачные границы */
+	border-bottom: 10px solid #ffff; /* Добавляем треугольник */
+}
 .ul-quest {
 	padding-left: 20px;
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 14px;
+	overflow: auto;
+	height: 200px;
 }
 .ul-quest li {
-	margin-bottom: 23px;
+	margin-bottom: 22px;
 }
 .ul-quest li p {
-	margin-left: 20px;
+	margin-left: 15px;
 }
 .save {
 	position: absolute;
@@ -204,30 +274,30 @@ header {
 	background: #0e9347;
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
-	font-size: 17px;
-	padding-top: 17px;
-	padding-bottom: 17px;
+	font-size: 16px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	width: 100%;
 }
 .button-save button {
 	opacity: 0.6;
 	outline: 0px;
 	cursor: pointer;
-	font-size: 16px;
+	font-size: 14px;
 	border-radius: 10px;
 	border: 0px;
-	margin-bottom: 33px;
+	margin-bottom: 29px;
 	background-color: #ffffff;
 	padding: 22px;
 	width: 100%;
 }
 .new-quest {
 	width: 100%;
-	height: 353px;
+	height: 310px;
 	background: #ffffff;
 	border-radius: 10px;
-	padding-left: 25px;
-	padding-right: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 .post {
 	padding-top: 25px;
@@ -236,20 +306,20 @@ header {
 	padding-bottom: 25px;
 }
 .post img {
-	width: 14px;
+	width: 12px;
 	margin: auto 0;
-	height: 14px;
+	height: 12px;
 }
 .post p {
-	font-size: 16px;
-	margin-left: 14px;
+	font-size: 14px;
+	margin-left: 10px;
 }
 .quest-input input {
-	height: 44px;
+	height: 38px;
 	width: 98%;
-	padding-left: 20px;
+	padding-left: 16px;
 	border-radius: 5px;
-	font-size: 15px;
+	font-size: 14px;
 	border: 0px;
 	background: #f6f8f9;
 	margin-bottom: 15px;
@@ -257,9 +327,9 @@ header {
 .quest-input button {
 	outline: 0px;
 	cursor: pointer;
-	padding: 13px;
+	padding: 11px;
 	width: 98%;
-	font-size: 17px;
+	font-size: 16px;
 	border-radius: 10px;
 	border: 0px;
 	color: #ffffff;
@@ -267,24 +337,24 @@ header {
 }
 
 .links {
-	margin-top: 30px;
+	margin-top: 26px;
 }
 .links li:last-child {
 	margin-bottom: 0px;
 }
 .links li {
-	margin-bottom: 20px;
+	margin-bottom: 16px;
 	display: flex;
 }
 .links li a {
 	color: #2a68be;
-	font-size: 14px;
+	font-size: 13px;
 }
 .links li img {
 	margin: auto 0;
-	width: 14px;
-	height: 14px;
-	margin-right: 15px;
+	width: 12px;
+	height: 12px;
+	margin-right: 12px;
 }
 .login {
 	margin-left: 31px;
