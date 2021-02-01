@@ -22,43 +22,43 @@ $('.input2').click(function (e) {
 });
 hexoClock();
 
-function tabActive() {
-	let tabNav = document.querySelectorAll('.quest-list-li'),
-		tabContent = document.querySelectorAll('.full'),
-		tabName;
+// function tabActive() {
+// 	let tabNav = document.querySelectorAll('.quest-list-li'),
+// 		tabContent = document.querySelectorAll('.full'),
+// 		tabName;
 
-	tabContent.forEach(item => {
-		item.classList.add('full')
-		if (item.className === 'quest-full full block_0') {
-			item.classList.add('active')
-			item.classList.remove('full')
-		}
-	})
+// 	tabContent.forEach(item => {
+// 		item.classList.add('full')
+// 		if (item.className === 'quest-full full block_0') {
+// 			item.classList.add('active')
+// 			item.classList.remove('full')
+// 		}
+// 	})
 
-	tabNav.forEach(item => {
-		if (item.className === 'quest-list-li block_0') {
-			item.classList.add('select')
-		}
-		item.addEventListener('click', selectTab)
-	})
-	function selectTab() {
-		tabNav.forEach(item => {
-			item.classList.remove('select')
-		});
-		this.classList.add('select')
-		tabName = this.getAttribute('data-tab-name');
-		selectTabContent(tabName)
-	}
-	function selectTabContent(tabName) {
-		tabContent.forEach(item => {
-			if (item.classList.contains(tabName)) {
-				item.classList.add('active')
-				item.classList.remove('full')
-			} else {
-				item.classList.remove('active')
-				item.classList.add('full')
-			}
-		})
-	}
-}
-tabActive()
+// 	tabNav.forEach(item => {
+// 		if (item.className === 'quest-list-li block_0') {
+// 			item.classList.add('select')
+// 		}
+// 		item.addEventListener('click', selectTab)
+// 	})
+// 	function selectTab() {
+// 		tabNav.forEach(item => {
+// 			item.classList.remove('select')
+// 		});
+// 		this.classList.add('select')
+// 		tabName = this.getAttribute('data-tab-name');
+// 		selectTabContent(tabName)
+// 	}
+// 	function selectTabContent(tabName) {
+// 		tabContent.forEach(item => {
+// 			if (item.classList.contains(tabName)) {
+// 				item.classList.add('active')
+// 				item.classList.remove('full')
+// 			} else {
+// 				item.classList.remove('active')
+// 				item.classList.add('full')
+// 			}
+// 		})
+// 	}
+// }
+// tabActive()

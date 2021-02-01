@@ -7,6 +7,8 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="jquery-ui.css">
+	<link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -44,30 +46,43 @@
 					<div class="quest">
 						<h2>Павел</h2>
 						<ul class="quest-list">
-							<todo-name :data-tab-name="'block_'+index" :class="'block_' + index"
-								v-for="(item, index) in pending" :item="item" :key="item.name" :index="index">
-							</todo-name>
+							<v-tabs class="quest-list-li" vertical v-model="tab" background-color="transparent"
+								color="basil">
+								<v-tab v-for="(item, index) in pending" :key="item.name">
+									<v-card-text class="text-lef">
+										<img src="img/monthly.png" alt=""> {{item.name}}
+										<button class="deleteMass buttonAD"
+											@click="todoList.splice(index, 1)">X</button>
+									</v-card-text>
+								</v-tab>
+							</v-tabs>
+
 						</ul>
 					</div>
 				</div>
-
-				<div v-show='!create' class="quest-full full" v-for="(item, index) in pending"
-					:class="'block_' + index">
-					<todo-list :item="item" :pending="pending" :is-Active="isActive" :name="new_name" :show="show">
-					</todo-list>
-				</div>
-
+				<v-window class="quest-full" v-show="!create">
+					<v-tab-item>
+						<v-tabs-items v-model="tab">
+							<v-tab-item v-for="(item, index) in pending" :key="item.name">
+								<todo-list :item="item" :pending="pending" :is-Active="isActive" :name="new_name"
+									:show="show">
+								</todo-list>
+							</v-tab-item>
+						</v-tabs-items>
+					</v-tab-item>
+				</v-window>
 				<div v-show="create" class="quest-full">
 					<div class="quest-title">
 						<div class="quest-title-text">
-							<h2><input placeholder="Название вашего списка" v-model="new_name"></h2>
+							<h2><input placeholder="Название списка" v-model="new_name"></h2>
 						</div>
 					</div>
 					<div class="ul-quest">
 						<ul>
 							<li v-for="(item,index) in new_todo">
 								<input placeholder="Ваша задача" type=" text" v-model="new_todo[index]">
-								<button @click="new_todo.push('')">+</button>
+								<button class="addItem buttonAD" @click="new_todo.push('')">+</button>
+								<button class="deleteItem buttonAD" @click="new_todo.splice(indexItem, 1)">x</button>
 							</li>
 						</ul>
 					</div>
@@ -75,25 +90,9 @@
 						<button @click="addItem">Создать</button>
 					</div>
 				</div>
-
 				<div class="quest-create">
 					<div class="button-save"><button>Ссылки и другое</button></div>
-					<div class="new-quest">
-						<div class="post"><img src="img/plus.png" alt="">
-							<p>Добавить</p>
-						</div>
-						<div class="quest-input">
-							<input type="text" placeholder="Название">
-							<input type="text" placeholder="Ссылка">
-							<button>Сохранить</button>
-						</div>
-						<div>
-							<ul class="links">
-								<li><img src="img/link.png" alt=""><a href="">Сайт Авито</a></li>
-								<li><img src="img/link.png" alt=""><a href="">Сайт Михаила</a></li>
-							</ul>
-						</div>
-					</div>
+					<todo-links></todo-links>
 				</div>
 			</div>
 		</div>
@@ -115,37 +114,92 @@
 		</div>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
 	<script>
-		Vue.component('todo-name', {
-			props: {
-				item: Object,
-				index: Number
-			},
+
+		Vue.component('todo-links', {
 			template: `
-			<li class="quest-list-li"><img
-				src="img/monthly.png" alt="">
-				<p> {{ item.name }} </p>
-			</li>
+			 <div class="new-quest">
+						<div class="post"><img src="img/plus.png" alt="">
+							<p>Добавить</p>
+						</div>
+						<div class="quest-input">
+							<input v-model="new_lname" type="text" placeholder="Название">
+							<input v-model="new_link" type="text" placeholder="Ссылка">
+							<button @click="addItem">Сохранить</button>
+						</div>
+						<div>
+							<ul class="links">
+								<li v-for="(item, index) in todoLinks">
+									<img src="img/link.png" alt="">
+									<a target="_blank" :href="item.link" :key="item.lname"> {{item.lname}} </a>
+									<button class="deleteLinks " @click="todoLinks.splice(index, 1)">X</button>
+								</li>
+							</ul>
+						</div>
+					</div> 
 			`,
+			data() {
+				return {
+					todoLinks: [
+						{ link: 'https://www.youtube.com/', lname: 'YouTube' },
+						{ link: 'https://www.google.com/', lname: 'Google' }
+					],
+					new_link: '',
+					new_lname: '',
+				}
+			},
+			watch: {
+				todoLinks(updateLink) {
+					localStorage.setItem('todo-links', JSON.stringify(updateLink))
+				},
+				deep: true
+			},
+			mounted() {
+				this.getTodos()
+			},
 			methods: {
+				getTodos() {
+					// get all todos when loading the page
+					if (localStorage.getItem('todo-links')) {
+						this.todoLinks = JSON.parse(localStorage.getItem('todo-links'));
+					}
+				},
+				// add a new item
+				addItem() {
+					// validation check
+					if (this.new_lname || this.new_link) {
+						this.todoLinks.unshift({
+							link: this.new_link,
+							lname: this.new_lname,
+						});
+					}
+					// reset createTodo
+					this.create = false
+					// reset new_todo
+					this.new_lname = '';
+					this.new_link = '';
+					// save the new item in localstorage
+					return true;
+				},
 			}
 		})
 		Vue.component('todo-list', {
 			props: ["pending", "item", "name", "index", "todoList"],
 			template: `
-				<div>
+				<div class="quest-full-list">
 					<div class="quest-title">
 						<div class="quest-title-text">
 							<h2 v-if="!isActive"> {{ item.name }} </h2>
-							<h2 v-else><input v-model="item.name"></h2>
+							<h2 v-else><input v-model.lazy="item.name"></h2>
 						</div>
 						<div @click="showNav" class="create-quest">
 							<img src="img/more.png" alt="">
 						</div>
 					</div>
 					<transition name="navCreate">
-						<div v-if="show" class="nav-create">
-							<p @click="changeToDo">Редактировать</p>
+						<div v-if="show" @click="changeToDo" class="nav-create">
+							<p>Редактировать</p>
 							</div>
 					</transition>
 					<div class="ul-quest">
@@ -154,15 +208,15 @@
 								<span @click="finishTitle"  class="todo-text">{{ value }} </span>
 								<li v-else>
 									<input v-model="item.title[indexItem]">
-									<button class="" @click="item.title.splice(indexItem, 1)" >x</button>
+									<button class="deleteItem buttonAD" @click="item.title.splice(indexItem, 1)" >x</button>
+									<button  v-show="isActive" class="last-button addItem buttonAD" @click="item.title.push('')" >+</button>
 									</li>
-									<button  v-show="isActive" class="last-button" @click="item.title.push('')" >+</button>
 								</li>
 						</ul>
 					</div>
 					<div class="save">
-						<button @click="saveToDo">Сохранить</button>
-					</div>	
+												<button @click="saveToDo">Сохранить</button>
+					</div>
 				</div>
 			`,
 			data() {
@@ -176,10 +230,9 @@
 				finishTitle(event) {
 					event.target.classList.toggle('complete')
 				},
-				changeToDo(event) {
+				changeToDo() {
 					this.show = false
 					this.isActive = true
-
 				},
 				createTodo() {
 					this.isActive = !this.isActive
@@ -226,8 +279,10 @@
 
 		new Vue({
 			el: '#app',
+			vuetify: new Vuetify(),
 			data() {
 				return {
+					tab: null,
 					create: false,
 					isActive: false,
 					show: false,
@@ -293,19 +348,12 @@
 					// save the new item in localstorage
 					return true;
 				},
-				// addTask() {
-				// 	this.title = this.title.push('');
-				// },
 				deleteItem(item) {
 					this.todoList.splice(this.todoList.indexOf(item), 1);
 				},
 				toggleShowComplete() {
 					this.showComplete = !this.showComplete;
 				},
-				// addTask(){
-				// 	if()
-				// 	this.new_todo.push('')
-				// }
 			},
 			computed: {
 				pending: function () {
