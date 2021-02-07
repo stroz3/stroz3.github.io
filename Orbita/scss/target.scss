@@ -1,0 +1,119 @@
+.target {
+    padding-top: 80px;
+    background: url(../img/Заднийфонвторойблок.png) top/cover no-repeat;
+    border-radius: 0px 0px 125px 125px;
+    position: relative;
+    margin-bottom: 200px;
+    height: 700px;
+    // .target__row
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        bottom: -6%;
+        border-radius: 0px 0px 80px 80px;
+        border-bottom: 1px solid #061a62;
+    }
+
+    &__row {
+        margin-top: 64px;
+        display: flex;
+        justify-content: center;
+    }
+
+    // .target__text
+
+    &__text {
+        color: white;
+        text-align: center;
+        font-family: "Montserrat-ExtraBold";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 49px;
+        letter-spacing: 0em;
+    }
+
+    // .target__text-title
+
+    &__text-title {
+    }
+
+    // .target__circles
+
+    &__circles {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    // .target__circle-blog
+
+    &__circle-blog {
+        cursor: pointer;
+        border: 5px solid #0fa4f2;
+        border-radius: 50%;
+        padding: 160px 110px;
+        h2 {
+            color: rgba(15, 164, 242, 1);
+        }
+        &::before {
+            content: "";
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0px auto;
+            position: absolute;
+        }
+    }
+
+    // .target__circle-title
+
+    &__circle-title {
+        font-family: "Montserrat-ExtraBold";
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 43px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+    // .target__circle-text
+
+    &__circle-text {
+        display: none;
+    }
+
+    // .target__circle-profit
+
+    &__circle-profit {
+        margin-left: -40px;
+        margin-right: -40px;
+        border: 5px solid white;
+        border-radius: 50%;
+        padding: 160px 90px;
+        cursor: pointer;
+        h2 {
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+
+    // .target__circle-business
+
+    &__circle-business {
+        border: 5px solid #f906dd;
+        border-radius: 50%;
+        padding: 160px 110px;
+        cursor: pointer;
+        h2 {
+            color: rgba(249, 6, 221, 1);
+        }
+    }
+}
+.container {
+}
