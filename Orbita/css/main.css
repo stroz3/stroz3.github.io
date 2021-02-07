@@ -2078,6 +2078,11 @@ template {
 }
 
 @media (max-width: 479px) {
+  .header__menu-mobile {
+    margin: 0px auto;
+    margin-top: 20px;
+  }
+
   .header {
     border-radius: 0px 0px 35px 35px;
   }
@@ -2096,6 +2101,12 @@ template {
     width: 100% !important;
     font-size: 23px !important;
     margin-left: 10px;
+  }
+}
+
+@media (max-width: 353px) {
+  .header__menu-mobile {
+    margin: 0px;
   }
 }
 
