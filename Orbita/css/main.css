@@ -1953,10 +1953,12 @@ template {
   }
 
   .header__text-info-blog {
+    margin-top: 20px;
     margin-right: 0px !important;
   }
 
   .header__row {
+    padding-top: 10px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: distribute !important;
@@ -2100,7 +2102,7 @@ template {
   .header__text-subtitleBlog {
     width: 100% !important;
     font-size: 23px !important;
-    margin-left: 10px;
+    text-align: center;
   }
 }
 
