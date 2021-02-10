@@ -17,25 +17,30 @@ testWebP(function (support) {
 });
 
 
-let btnWork = document.querySelector('.bloger__button'),
-    massage = document.querySelector('.bloger__massage'),
-    massageRow = document.querySelector('.bloger__massage-row')
+massage = document.querySelector('.bloger__massage'),
 
-btnWork.addEventListener('click', event => {
-    if (event.target) {
-        fadeIn(massage, 'flex')
-    }
-})
-massageRow.addEventListener('click', event => {
+    document.querySelector('.bloger__button').addEventListener('click', event => {
+        if (event.target) {
+            fadeIn(massage, 'flex')
+        }
+    })
+document.querySelector('.bloger__massage-row').addEventListener('click', event => {
     event.stopPropagation();
 })
 massage.addEventListener('click', event => {
-
     if (event.target) {
         fadeOut(massage)
     }
 })
+document.querySelector('.bloger__button-border').addEventListener('click', event => {
+    let areaText = document.querySelector('.bloger__text-area')
+    if (areaText.value == '') {
+    } else {
+        fadeOut(massage)
+    }
 
+
+})
 function fadeOut(el) {
     el.style.opacity = 1;
     (function fade() {
