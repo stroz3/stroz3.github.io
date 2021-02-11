@@ -465,7 +465,7 @@ template {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.header .header__log-ul:hover .header__menu-drop {
+.header .header__li-nickname:hover .header__menu-drop {
   visibility: visible;
   -webkit-transition-delay: 0.3s;
        -o-transition-delay: 0.3s;
@@ -473,6 +473,12 @@ template {
   opacity: 1;
   top: 50px;
   left: 0px;
+}
+
+.header .header__menu-li:hover .add-li:before {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .header .header__menu-li:hover .header__menu-drop {
@@ -1773,12 +1779,6 @@ template {
 .button-grand:hover:before {
   opacity: 0;
   top: -100%;
-}
-
-.add-li:hover:before {
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
 }
 
 .no-webp .add-li::before{
