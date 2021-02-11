@@ -521,7 +521,7 @@ template {
 }
 
 .header .width-all {
-  top: 80px;
+  top: 70px;
   width: 90%;
 }
 
@@ -772,12 +772,14 @@ template {
   border-radius: 20px 0px 0px 20px;
 }
 
-.header__li-nickname:hover {
+.header__li-nickname:hover,
+.header__li-nickname:focus {
   width: 220px;
   left: -180px;
 }
 
-.header__li-nickname:hover .header__nickname-text a {
+.header__li-nickname:hover .header__nickname-text a,
+.header__li-nickname:focus .header__nickname-text a {
   color: black;
 }
 
@@ -2047,7 +2049,8 @@ template {
     font-size: 18px;
   }
 
-  .header__li-nickname:hover {
+  .header__li-nickname:hover,
+  .header__li-nickname:focus {
     width: 200px;
     left: -160px;
   }
