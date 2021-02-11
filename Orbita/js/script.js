@@ -18,29 +18,42 @@ testWebP(function (support) {
 
 
 massage = document.querySelector('.bloger__massage'),
+    body = document.querySelector('body')
 
-    document.querySelector('.bloger__button').addEventListener('click', event => {
-        if (event.target) {
-            fadeIn(massage, 'flex')
-        }
-    })
+document.querySelector('.bloger__button').addEventListener('click', event => {
+    if (event.target) {
+        openMenu()
+    }
+})
 document.querySelector('.bloger__massage-row').addEventListener('click', event => {
     event.stopPropagation();
 })
 massage.addEventListener('click', event => {
     if (event.target) {
-        fadeOut(massage)
+        closeMenu()
     }
 })
 document.querySelector('.bloger__button-border').addEventListener('click', event => {
     let areaText = document.querySelector('.bloger__text-area')
     if (areaText.value == '') {
     } else {
-        fadeOut(massage)
+        closeMenu()
     }
-
-
 })
+document.querySelector('.bloger__massage-close').addEventListener('click', event => {
+    if (event.target) {
+        closeMenu()
+    }
+})
+
+function openMenu() {
+    body.style.overflowY = 'hidden'
+    fadeIn(massage, 'flex')
+}
+function closeMenu() {
+    body.style.overflowY = 'scroll'
+    fadeOut(massage)
+}
 function fadeOut(el) {
     el.style.opacity = 1;
     (function fade() {
