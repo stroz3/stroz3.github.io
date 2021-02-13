@@ -813,9 +813,9 @@ template {
   white-space: nowrap;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
-  -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   color: transparent;
 }
 
@@ -1400,6 +1400,7 @@ template {
           flex-direction: column;
   margin-right: 145px;
   position: relative;
+  height: 100%;
 }
 
 .bloger__img {
@@ -1500,7 +1501,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  bottom: 10%;
+  bottom: -15%;
   left: 3%;
 }
 
@@ -2243,8 +2244,7 @@ template {
   }
 
   .bloger__img-small {
-    bottom: 25%;
-    left: -2%;
+    left: 0%;
   }
 
   .bloger__button-text {
@@ -2577,7 +2577,6 @@ template {
   }
 
   .bloger__img-small {
-    bottom: 43%;
     left: 4%;
   }
 
@@ -2867,10 +2866,6 @@ template {
 
   .bloger__img-small {
     z-index: 9;
-  }
-
-  .bloger__img-small {
-    bottom: -15%;
   }
 
   .bloger__body {
