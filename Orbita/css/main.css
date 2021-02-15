@@ -3653,6 +3653,10 @@ template {
     top: 50%;
     right: 0;
   }
+
+  .offers__title-info {
+    width: 95%;
+  }
 }
 
 @media (max-width: 575px) {
