@@ -70,6 +70,7 @@ body {
   background-color: #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -411,17 +412,17 @@ template {
 }
 
 .no-webp .header__lending{
-  background: url("../img/Заднийфоншапка.png") top/cover no-repeat; }
+  background: url("../img/Заднийфоншапка.png") center/cover no-repeat; }
 
 .no-webp .header__blogers{
-  background: url("../img/ЗаднийБлогер.png") top/cover no-repeat; }
+  background: url("../img/ЗаднийБлогер.png") center/cover no-repeat; }
 
 .header__blogers {
   border-radius: 0px 0px 155px 155px;
 }
 
 .no-webp .header__offers{
-  background: url("../img/offers.png") top/cover no-repeat; }
+  background: url("../img/offers.png") center/cover no-repeat; }
 
 .header__row {
   padding-top: 40px;
@@ -765,6 +766,7 @@ template {
   -o-transition: all 0.5s;
   transition: all 0.5s;
   color: transparent;
+  overflow: hidden;
   opacity: 1;
   z-index: -1;
   border-radius: 20px 0px 0px 20px;
@@ -774,6 +776,7 @@ template {
 .header__li-nickname:focus {
   width: 220px;
   left: -180px;
+  overflow: visible;
 }
 
 .header__li-nickname:hover .header__nickname-text a,
@@ -1310,6 +1313,8 @@ template {
 }
 
 .main__offer-button {
+  font-family: "Montserrat-Medium";
+  font-size: 20px;
   margin-top: 20px;
   width: 80%;
 }
@@ -1943,6 +1948,124 @@ template {
   display: none;
 }
 
+.offer {
+  margin-top: 80px;
+}
+
+.offer__title-advertiser {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.offer__title-advertiser-text {
+  font-family: "Montserrat-Bold";
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.offer__advertiser-span {
+  font-family: "Montserrat-Medium";
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 10px;
+  color: #bebebe;
+}
+
+.offer__body-row {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+
+.offer__body-title-text {
+  font-family: "Montserrat-Bold";
+  font-size: 35px;
+  line-height: 43px;
+  color: #061a62;
+  padding: 30px;
+  margin: 0px;
+}
+
+.offer__body-item {
+  border-top: 1px solid #bebebe;
+  padding: 25px 30px;
+}
+
+.offer__body-item-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.offer__body-item-title-block {
+  display: block;
+}
+
+.offer__body-item-title-text {
+  font-family: "Montserrat-Bold";
+  font-size: 25px;
+  line-height: 30px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+
+.offer__body-item-text {
+  font-family: "Montserrat-Medium";
+  font-size: 20px;
+  line-height: 33px;
+  margin: 0px;
+}
+
+.offer__body-price-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  margin-left: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.offer__body-price-title {
+  font-family: "Montserrat-Bold";
+  font-size: 30px;
+  line-height: 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 22%;
+}
+
+.offer__body-price-title-text {
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+
+.offer__body-price-title-span {
+  color: #0fa4f2;
+}
+
+.offer__body-price-button {
+  margin-left: 40px;
+  font-family: "Montserrat-Bold";
+  font-size: 25px;
+  line-height: 30px;
+  width: 33%;
+}
+
+.offer__body-price-button button {
+  border-radius: 20px;
+}
+
+.offer .offer__body-price-confirmation img {
+  margin-left: 0px;
+}
+
 .button-grand {
   padding: 13px 16px;
   color: white;
@@ -2016,6 +2139,7 @@ template {
 }
 
 .button-grand-black {
+  cursor: pointer;
   padding: 13px 16px;
   color: white;
   background-color: transparent;
@@ -2124,7 +2248,7 @@ template {
 
 @media (min-width: 1366px) {
   .container {
-    max-width: 1330px;
+    max-width: 1230px;
   }
 }
 
@@ -2243,6 +2367,14 @@ template {
     margin-top: 5px;
   }
 
+  .offer__body-price-title {
+    width: 28%;
+  }
+
+  .offer__body-price-button {
+    width: 42%;
+  }
+
   .button-grand {
     padding: 10px 13px;
   }
@@ -2299,8 +2431,8 @@ template {
   }
 
   .main .main__offer-body {
-    padding-left: 43px;
-    padding-right: 43px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .main .main__details-text {
@@ -2345,7 +2477,6 @@ template {
   }
 
   .main .main__offer-button {
-    font-family: "Montserrat-Bold";
     font-size: 18px;
     width: 100%;
     padding-bottom: 7px;
@@ -2568,6 +2699,60 @@ template {
     padding-top: 15px;
     padding-bottom: 15px;
   }
+
+  .offer__title-advertiser-text {
+    font-size: 20px;
+  }
+
+  .offer__title-advertiser {
+    margin-left: 20px;
+  }
+
+  .offer__advertiser-span {
+    font-size: 17px;
+  }
+
+  .offer__body-title-text {
+    padding: 20px;
+    font-size: 23px;
+  }
+
+  .offer__body-item-title-text {
+    font-size: 18px;
+  }
+
+  .offer__body-item {
+    padding: 20px;
+  }
+
+  .offer__body-item-text {
+    font-size: 15px;
+    line-height: 32px;
+  }
+
+  .offer__body-price-title-text {
+    font-size: 25px;
+  }
+
+  .offer__body-price-title-span {
+    font-size: 25px;
+  }
+
+  .offer__body-price-button {
+    font-size: 15px;
+  }
+
+  .offer__body-price-title {
+    width: 23%;
+  }
+
+  .offer__body-price-button {
+    width: 29%;
+  }
+
+  .offer__body-price-row {
+    margin-left: 20px;
+  }
 }
 
 @media (max-width: 1365px) {
@@ -2746,8 +2931,6 @@ template {
   }
 
   .main .main__offer-button {
-    font-family: "Montserrat-Bold";
-    font-size: 18px;
     width: 100%;
   }
 
@@ -3104,6 +3287,78 @@ template {
     width: 100%;
   }
 
+  .offer__title-advertiser-text {
+    font-size: 18px;
+  }
+
+  .offer__advertiser-span {
+    font-size: 15px;
+  }
+
+  .offer__body-title-text {
+    font-size: 25px;
+  }
+
+  .offer__body-item-title-text {
+    font-size: 18px;
+  }
+
+  .offer__body-item-text {
+    font-size: 15px;
+  }
+
+  .offer__body-price-confirmation {
+    position: static;
+  }
+
+  .offer__body-price-confirmation p {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    text-align: left;
+    display: block;
+  }
+
+  .offer__body-price-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 0px;
+  }
+
+  .offer__body-price-button {
+    margin: 0px;
+  }
+
+  .offer__body-price-button button {
+    width: 100%;
+  }
+
+  .offer__body-price-title,
+  .offer__body-price-button,
+  .offer__body-price-confirmation {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .offer__body-price-button,
+  .offer__body-price-confirmation {
+    margin-top: 30px;
+  }
+
+  .offer__body-price-confirmation {
+    margin-left: 20%;
+  }
+
   .add-li::before {
     right: 30%;
     top: 11px;
@@ -3383,6 +3638,18 @@ template {
   .bloger__massage {
     font-size: 14px;
   }
+
+  .offer__body-title-text {
+    line-height: 30px;
+  }
+
+  .offer__body-item-text {
+    line-height: 30px;
+  }
+
+  .offer__body-price-confirmation {
+    margin-left: 0px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -3657,6 +3924,66 @@ template {
   .offers__title-info {
     width: 95%;
   }
+
+  .offer__title-advertiser-text {
+    font-size: 12px;
+  }
+
+  .offer__advertiser-span {
+    font-size: 10px;
+  }
+
+  .offer__body-title-text {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 15px;
+  }
+
+  .offer__body-item-title-text {
+    font-size: 15px;
+    margin-right: auto;
+  }
+
+  .offer__body-item-text {
+    font-size: 12px;
+    line-height: 22px;
+    margin-right: auto;
+  }
+
+  .offer__body-item-title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .offer__body-item {
+    padding: 15px;
+  }
+
+  .offer__title-advertiser {
+    margin-bottom: 10px;
+    margin-left: 15px;
+  }
+
+  .offer__body-price-row,
+  .offer__body-price-button,
+  .offer__body-price-confirmation {
+    margin-top: 20px;
+  }
+
+  .offer__body-price-title-text,
+  .offer__body-price-title-span {
+    font-size: 20px;
+  }
+
+  .offer__body-price-button {
+    font-size: 12px;
+  }
+
+  .offer__body-price-button button {
+    padding: 10px 30px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -3834,6 +4161,10 @@ template {
   .bloger__title-h2 {
     font-size: 18px;
   }
+
+  .offer__body-price-confirmation p {
+    width: 100%;
+  }
 }
 
 @media (max-width: 353px) {
@@ -3846,11 +4177,11 @@ template {
   }
 }
 
-.webp .header__lending{ background: url(../img/Заднийфоншапка.webp) top/cover no-repeat; }
+.webp .header__lending{ background: url(../img/Заднийфоншапка.webp) center/cover no-repeat; }
 
-.webp .header__blogers{ background: url(../img/ЗаднийБлогер.webp) top/cover no-repeat; }
+.webp .header__blogers{ background: url(../img/ЗаднийБлогер.webp) center/cover no-repeat; }
 
-.webp .header__offers{ background: url(../img/offers.webp) top/cover no-repeat; }
+.webp .header__offers{ background: url(../img/offers.webp) center/cover no-repeat; }
 
 .webp .header__text-down-img::before{ background: url(../img/arrow1.webp) no-repeat; }
 
