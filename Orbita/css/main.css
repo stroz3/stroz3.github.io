@@ -1676,6 +1676,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow-y: auto;
 }
 
 .bloger__massage-row {
@@ -1685,6 +1686,7 @@ template {
           box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
   width: 50%;
+  height: 70%;
   padding: 60px;
   z-index: 10000;
 }
@@ -4009,6 +4011,12 @@ template {
   .bloger__button-border {
     font-size: 12px;
     padding: 8px 5px;
+  }
+
+  .bloger__massage-close {
+    font-size: 30px;
+    right: 6px;
+    top: -13px;
   }
 }
 
