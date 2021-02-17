@@ -20,7 +20,7 @@ testWebP(function (support) {
 massage = document.querySelector('.bloger__massage'),
     body = document.querySelector('body')
 
-document.querySelector('.bloger__button').addEventListener('click', event => {
+document.querySelector('.button__open-massage').addEventListener('click', event => {
     if (event.target) {
         openMenu()
     }
