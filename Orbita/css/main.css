@@ -2797,6 +2797,42 @@ template {
   margin-left: 10px;
 }
 
+.profile__notifications {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  bottom: 20px;
+  right: 20px;
+}
+
+.profile__notifications-row {
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 70px;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+}
+
+.profile__notifications-text {
+  font-family: "Montserrat-Bold";
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0;
+  color: #061a62;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.accounts-item-info-p-red {
+  color: #ff0000;
+}
+
 .profile__contant {
   display: none;
 }
@@ -3007,7 +3043,12 @@ template {
   opacity: 1;
 }
 
-.button-grand-black:disabled:before {
+button:disabled:before {
+  background: #bebebe;
+}
+
+button:disabled {
+  pointer-events: none;
   background: #bebebe;
 }
 
@@ -3657,7 +3698,7 @@ template {
   }
 
   .profile__questionnaire-avatar {
-    height: 500px;
+    height: 497px;
   }
 
   .profile__questionnaire-create-button,
@@ -3718,6 +3759,15 @@ template {
   }
 
   .profile__questionnaire-accounts-row-title-h2 {
+    font-size: 20px;
+  }
+
+  .profile__notifications-row {
+    padding: 30px;
+    border-radius: 50px;
+  }
+
+  .profile__notifications-text {
     font-size: 20px;
   }
 
@@ -4539,6 +4589,18 @@ template {
   .profile__offer-item {
     margin-top: 20px;
   }
+
+  .profile__notifications-row {
+    padding: 30px 70px;
+  }
+
+  .profile__notifications-text {
+    font-size: 18px;
+  }
+
+  .profile__notifications-img img {
+    width: 80px;
+  }
 }
 
 @media (max-width: 999px) {
@@ -4924,6 +4986,27 @@ template {
 
   .profile__offer-item {
     margin-top: 0px;
+  }
+
+  .profile__notifications {
+    right: 0;
+    left: 0;
+    margin: 0px auto;
+    width: 80%;
+  }
+
+  .profile__notifications-row {
+    padding: 20px 40px;
+    border-radius: 40px;
+  }
+
+  .profile__notifications-text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .profile__notifications-img img {
+    width: 80px;
   }
 }
 
@@ -5429,6 +5512,24 @@ template {
   .profile__offer-deteilds-text {
     display: none;
   }
+
+  .profile__notifications {
+    width: 90%;
+  }
+
+  .profile__notifications-row {
+    padding: 20px 40px;
+    border-radius: 20px;
+  }
+
+  .profile__notifications-text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .profile__notifications-img img {
+    width: 50px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -5668,6 +5769,10 @@ template {
   .profile__offer-accounts-row-title-h2 {
     margin-left: 0px;
     font-size: 18px;
+  }
+
+  .profile__notifications-row {
+    padding: 15px;
   }
 }
 
