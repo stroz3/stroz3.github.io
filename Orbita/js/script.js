@@ -1,3 +1,4 @@
+
 // Поделючение отдельного js
 // Проверка на совместимость webp браузером
 function testWebP(callback) {
@@ -18,33 +19,63 @@ testWebP(function (support) {
 
 
 massage = document.querySelector('.bloger__massage'),
-    body = document.querySelector('body')
+    body = document.querySelector('body'),
+    menuli = document.querySelector('.profile__tab-menu-ul-li:last-child'),
+    menuliDrop = document.querySelectorAll('.profile__tab-menu-ul-li-drop'),
+    tabContant = document.querySelectorAll('.profile__contant'),
+    tabname = "",
+    document.querySelectorAll('.profile__tab-menu-li-link').forEach($el => {
+        $el.addEventListener('click', $element => {
+            $element.preventDefault()
+        })
+    })
 
-document.querySelector('.button__open-massage').addEventListener('click', event => {
-    if (event.target) {
-        openMenu()
+// document.querySelector('.button__open-massage').addEventListener('click', event => {
+//     if (event.target) {
+//         openMenu()
+//     }
+// })
+// document.querySelector('.bloger__massage-row').addEventListener('click', event => {
+//     event.stopPropagation();
+// })
+// massage.addEventListener('click', event => {
+//     if (event.target) {
+//         closeMenu()
+//     }
+// })
+// document.querySelector('.bloger__button-border').addEventListener('click', event => {
+//     let areaText = document.querySelector('.bloger__text-area')
+//     if (areaText.value == '') {
+//     } else {
+//         closeMenu()
+//     }
+// })
+// document.querySelector('.bloger__massage-close').addEventListener('click', event => {
+//     if (event.target) {
+//         closeMenu()
+//     }
+// })
+
+menuliDrop.forEach($el => {
+    $el.addEventListener("click", selectTabNavDrop)
+})
+
+
+function selectTabNavDrop() {
+    for (let i = 0; i < menuliDrop.length; i++) {
+        // Убираем у других
+        menuliDrop[i].classList.remove('choice');
     }
-})
-document.querySelector('.bloger__massage-row').addEventListener('click', event => {
-    event.stopPropagation();
-})
-massage.addEventListener('click', event => {
-    if (event.target) {
-        closeMenu()
-    }
-})
-document.querySelector('.bloger__button-border').addEventListener('click', event => {
-    let areaText = document.querySelector('.bloger__text-area')
-    if (areaText.value == '') {
-    } else {
-        closeMenu()
-    }
-})
-document.querySelector('.bloger__massage-close').addEventListener('click', event => {
-    if (event.target) {
-        closeMenu()
-    }
-})
+    tabnameDrop = this.getAttribute('data-tab-name')
+    activeTabContantDrop(tabnameDrop)
+    this.classList.add('choice')
+}
+function activeTabContantDrop(tabname) {
+    tabContant.forEach(item => {
+        item.classList.contains(tabname) ? fadeIn(item) : fadeOut(item)
+    })
+
+}
 
 function openMenu() {
     body.style.overflowY = 'hidden'
