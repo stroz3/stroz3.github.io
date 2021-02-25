@@ -6905,7 +6905,7 @@ button:disabled {
   }
 
   .header__row-info-lending {
-    margin-top: 25px;
+    margin-top: 35px;
   }
 
   .header__text-subtitle-lending {
@@ -7710,7 +7710,8 @@ button:disabled {
   }
 
   .header__row-info-lending {
-    margin-top: 10px;
+    margin-top: 70px;
+    padding-bottom: 70px;
   }
 
   .header__button-info-lending {
