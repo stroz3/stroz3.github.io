@@ -4942,6 +4942,10 @@ button:disabled {
     padding-left: 25px;
   }
 
+  .instruction__row-body-text button {
+    font-size: 17px;
+  }
+
   .black-arrow::before {
     top: 3px;
   }
