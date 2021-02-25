@@ -68,6 +68,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
+  position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   max-width: 100%;
@@ -1012,7 +1013,7 @@ template {
   visibility: visible;
 }
 
-.target__circle-row:hover .target__circle-title {
+.target__circle-row:hover:focus .target__circle-title {
   opacity: 0;
   -webkit-transform: scale(0.7);
       -ms-transform: scale(0.7);
@@ -6901,7 +6902,7 @@ button:disabled {
   .header__text-subtitle {
     font-size: 16px;
     line-height: 19px;
-    width: 102%;
+    width: 100%;
   }
 
   .header__img-info {
@@ -7977,7 +7978,7 @@ button:disabled {
   }
 
   .team__row-item-img::before {
-    width: 95%;
+    width: 280px;
     top: 0;
     left: 0;
     right: 0;
