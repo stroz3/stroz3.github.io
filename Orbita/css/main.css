@@ -976,8 +976,9 @@ template {
 
 .target__circle-title {
   font-family: "Montserrat-Bold";
-  font-size: 40px;
+  font-size: 35px;
   line-height: 49px;
+  margin: 0;
   position: absolute;
   opacity: 1;
   -webkit-transform: scale(1);
@@ -1016,7 +1017,7 @@ template {
   visibility: visible;
 }
 
-.target__circle-row:hover:focus .target__circle-title {
+.target__circle-row:hover .target__circle-title {
   opacity: 0;
   -webkit-transform: scale(0.7);
       -ms-transform: scale(0.7);
@@ -4686,7 +4687,7 @@ button:disabled {
   }
 
   .target__circle-title {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .target__circle-text {
@@ -5792,7 +5793,7 @@ button:disabled {
   }
 
   .target__circle-title {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .target__circle-text {
@@ -6589,7 +6590,7 @@ button:disabled {
   }
 
   .target__circle-title {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .target__circle-text {
@@ -7397,9 +7398,15 @@ button:disabled {
   }
 
   .target__circle-text {
-    font-size: 9px;
-    line-height: 14px;
-    width: 70%;
+    font-size: 12px;
+    line-height: 16px;
+    width: 100%;
+  }
+
+  .target__circle-row:hover .target__circle-text {
+    -webkit-transform: scale(0.76);
+        -ms-transform: scale(0.76);
+            transform: scale(0.76);
   }
 
   .target__circle {
@@ -7688,14 +7695,14 @@ button:disabled {
   }
 
   .header__text-title-lending {
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 30px;
+    line-height: 38px;
   }
 
   .header__text-subtitle-lending {
     margin-top: 10px;
-    font-size: 11px;
-    line-height: 13px;
+    font-size: 17px;
+    line-height: 20px;
   }
 
   .header__text-lending {
