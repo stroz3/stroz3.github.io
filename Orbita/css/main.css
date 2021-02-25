@@ -548,6 +548,9 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.header__row-info-lending {
   margin-top: 96px;
 }
 
@@ -877,8 +880,8 @@ template {
 
 .target {
   padding-top: 80px;
-  border-radius: 0px 0px 125px 125px;
   position: relative;
+  border-radius: 0px 0px 125px 125px;
 }
 
 .target::before {
@@ -3048,6 +3051,10 @@ template {
   display: none;
 }
 
+.lending {
+  overflow: hidden;
+}
+
 .benefits {
   margin-top: 160px;
 }
@@ -3935,7 +3942,7 @@ button:disabled {
     font-size: 17px;
   }
 
-  .header__button-info button:first-child {
+  .header__button-info-lending button:first-child {
     width: 45%;
   }
 
@@ -4143,21 +4150,21 @@ button:disabled {
     margin-top: 20px;
   }
 
-  .header__button-info button:first-child {
+  .header__button-info-lending button:first-child {
     width: 28%;
   }
 
-  .header__button-info button:last-child {
+  .header__button-info-lending button:last-child {
     width: 18%;
   }
 
-  .header__text-subtitle {
+  .header__text-subtitle-lending {
     margin-top: 10px;
     width: 50%;
     font-size: 18px;
   }
 
-  .header__text-info {
+  .header__text-info-lending {
     width: 100%;
   }
 
@@ -4167,7 +4174,7 @@ button:disabled {
     bottom: 0px;
   }
 
-  .header__text {
+  .header__text-lending {
     margin-bottom: 70px;
   }
 
@@ -4793,10 +4800,6 @@ button:disabled {
   .instruction,
   .team {
     margin-top: 100px;
-  }
-
-  .benefits {
-    overflow: hidden;
   }
 
   .target::before,
@@ -6082,7 +6085,7 @@ button:disabled {
 }
 
 @media (max-width: 1364px) {
-  .header__text-subtitle {
+  .header__text-subtitle-lending {
     width: 85%;
     margin: 0 auto;
     text-align: center;
@@ -6090,31 +6093,31 @@ button:disabled {
     line-height: 29px;
   }
 
-  .header__text-title {
+  .header__text-title-lending {
     font-size: 80px;
     line-height: 97px;
     text-align: center;
   }
 
-  .header__text {
+  .header__text-lending {
     margin-bottom: 235px;
   }
 
-  .header__button-info {
+  .header__button-info-lending {
     width: 40%;
     margin-bottom: 120px;
   }
 
-  .header__button-info button {
+  .header__button-info-lending button {
     margin: 0 auto;
     margin-top: 10px;
   }
 
-  .header__button-info button:first-child {
+  .header__button-info-lending button:first-child {
     width: 90%;
   }
 
-  .header__button-info button:last-child {
+  .header__button-info-lending button:last-child {
     width: 60%;
   }
 
@@ -6144,6 +6147,7 @@ button:disabled {
 
   .header__text-title {
     font-size: 60px;
+    line-height: 35px;
   }
 
   .header__text-subtitleBlog {
@@ -6171,11 +6175,11 @@ button:disabled {
     font-size: 20px;
   }
 
-  .header__text-title {
+  .header__text-title-lending {
     line-height: 73px;
   }
 
-  .header__text-subtitle {
+  .header__text-subtitle-lending {
     font-size: 20px;
     line-height: 24px;
     width: 95%;
@@ -6186,27 +6190,23 @@ button:disabled {
     height: 451px;
   }
 
-  .header__text {
+  .header__text-lending {
     margin-bottom: 160px;
   }
 
-  .header__row-info {
-    margin-top: 160px;
-  }
-
-  .header__button-info {
+  .header__button-info-lending {
     width: 45%;
   }
 
-  .header__button-info button {
+  .header__button-info-lending button {
     font-size: 16px;
   }
 
-  .header__button-info button:first-child {
+  .header__button-info-lending button:first-child {
     width: 100%;
   }
 
-  .header__button-info button:last-child {
+  .header__button-info-lending button:last-child {
     width: 70%;
   }
 
@@ -6890,20 +6890,20 @@ button:disabled {
     margin-bottom: 95px;
   }
 
-  .header__text-title {
+  .header__text-title-lending {
     font-size: 40px;
     line-height: 48px;
   }
 
-  .header__text {
+  .header__text-lending {
     margin-bottom: 50px;
   }
 
-  .header__row-info {
-    margin-top: 50px;
+  .header__row-info-lending {
+    margin-top: 25px;
   }
 
-  .header__text-subtitle {
+  .header__text-subtitle-lending {
     font-size: 16px;
     line-height: 19px;
     width: 100%;
@@ -6913,7 +6913,7 @@ button:disabled {
     display: none;
   }
 
-  .header__button-info {
+  .header__button-info-lending {
     width: 75%;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -7479,6 +7479,10 @@ button:disabled {
     line-height: 24px;
   }
 
+  .instruction__row-body-text button {
+    font-size: 12px;
+  }
+
   .instruction__row-body-text-p {
     font-size: 12px;
     line-height: 15px;
@@ -7679,31 +7683,31 @@ button:disabled {
     margin-top: 5px;
   }
 
-  .header__text-title {
+  .header__text-title-lending {
     font-size: 25px;
     line-height: 30px;
   }
 
-  .header__text-subtitle {
+  .header__text-subtitle-lending {
     margin-top: 10px;
     font-size: 11px;
     line-height: 13px;
   }
 
-  .header__text {
+  .header__text-lending {
     margin-bottom: 20px;
   }
 
-  .header__row-info {
-    margin-top: 20px;
+  .header__row-info-lending {
+    margin-top: 10px;
   }
 
-  .header__button-info {
+  .header__button-info-lending {
     margin-bottom: 20px;
   }
 
-  .header__button-info button {
-    font-size: 10px;
+  .header__button-info-lending button {
+    font-size: 12px;
   }
 
   .bloger__img img {
@@ -7991,6 +7995,10 @@ button:disabled {
 
   .team__row-item-text-info-p {
     width: 80%;
+  }
+
+  .instruction__row-body-text:last-child .instruction__row-body-text-number {
+    width: 44px;
   }
 }
 
