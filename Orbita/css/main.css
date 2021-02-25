@@ -4795,6 +4795,10 @@ button:disabled {
     margin-top: 100px;
   }
 
+  .benefits {
+    overflow: hidden;
+  }
+
   .target::before,
   .instruction__bloger::before {
     bottom: -45px;
@@ -7428,8 +7432,7 @@ button:disabled {
     display: none;
   }
 
-  .benefits__button-reg,
-  .benefits__button-reg button {
+  .benefits__button-reg {
     width: 100%;
     margin-top: 30px;
   }
@@ -7437,6 +7440,7 @@ button:disabled {
   .benefits__button-reg button {
     font-size: 13px;
     padding: 10px 13px;
+    width: 100%;
   }
 
   .benefits__row-body-item:nth-of-type(2) {
