@@ -799,7 +799,7 @@ template {
 
 .header__li-nickname {
   top: 5px;
-  left: -40px;
+  left: -45px;
   width: 70px;
   height: 45px;
   position: absolute;
@@ -838,7 +838,7 @@ template {
   line-height: 24px;
   padding-top: 10px;
   padding-bottom: 20px;
-  padding-left: 40px;
+  padding-left: 45px;
   padding-right: 30px;
 }
 
@@ -5666,12 +5666,12 @@ button:disabled {
     width: 116px;
   }
 
-  .loader__img img {
+  .preloader__img img {
     height: 370px;
     width: 370px;
   }
 
-  .loader__img::before {
+  .preloader__img::before {
     height: 400px;
     width: 400px;
     left: -14px;
@@ -7930,13 +7930,13 @@ button:disabled {
     width: 300px;
   }
 
-  .loader__img img {
+  .preloader__img img {
     height: 263px;
     width: 263px;
     padding: 30px;
   }
 
-  .loader__img::before {
+  .preloader__img::before {
     height: 290px;
     width: 290px;
     left: -13px;
@@ -8871,12 +8871,12 @@ button:disabled {
     width: 310px;
   }
 
-  .loader__img img {
+  .preloader__img img {
     height: 230px;
     width: 230px;
   }
 
-  .loader__img::before {
+  .preloader__img::before {
     height: 250px;
     width: 250px;
     left: -11px;
@@ -9415,12 +9415,12 @@ button:disabled {
     width: 240px;
   }
 
-  .loader__img img {
+  .preloader__img img {
     height: 170px;
     width: 170px;
   }
 
-  .loader__img::before {
+  .preloader__img::before {
     height: 185px;
     width: 185px;
     left: -10px;
