@@ -3366,7 +3366,6 @@ template {
   font-size: 17px;
   line-height: 21px;
   position: relative;
-  cursor: pointer;
   z-index: 999;
 }
 
@@ -3994,18 +3993,17 @@ template {
   display: none;
 }
 
-.loader {
+.preloader {
   background: #061a62;
   bottom: 0;
   left: 0;
-  overflow: hidden;
   position: fixed;
   right: 0;
   top: 0;
   z-index: 99999999;
 }
 
-.loader__container {
+.preloader__container {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -4019,14 +4017,14 @@ template {
           align-items: center;
 }
 
-.loader__img {
+.preloader__img {
   position: relative;
 }
 
-.no-webp .loader__img::before{
+.no-webp .preloader__img::before{
   background: url("../img/rocketPreloader.png") top/cover no-repeat; }
 
-.loader__img::before {
+.preloader__img::before {
   content: "";
   height: 540px;
   width: 540px;
@@ -4038,7 +4036,7 @@ template {
           animation: rotateRocket 2s linear infinite;
 }
 
-.loader__img img {
+.preloader__img img {
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
@@ -4046,6 +4044,22 @@ template {
   padding: 50px;
   border: 1px solid white;
   border-radius: 50%;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s 2s, opacity 0.3s linear;
+  -o-transition: visibility 0s 2s, opacity 0.3s linear;
+  transition: visibility 0s 2s, opacity 0.3s linear;
 }
 
 .crm {
@@ -9503,7 +9517,7 @@ button:disabled {
 
 .webp .forget .login__row-img{ background: url(../img/fogetpas.webp) top/cover no-repeat; }
 
-.webp .loader__img::before{ background: url(../img/rocketPreloader.webp) top/cover no-repeat; }
+.webp .preloader__img::before{ background: url(../img/rocketPreloader.webp) top/cover no-repeat; }
 
 .webp .error-page::before{ background: url(../img/shine.webp) top/cover no-repeat; }
 
