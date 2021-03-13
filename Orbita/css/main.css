@@ -680,15 +680,11 @@ template {
 }
 
 .header__button-info button {
+  width: 100%;
+}
+
+.header__button-info-lending-btn {
   margin-top: 20px;
-}
-
-.header__button-info button:first-child {
-  width: 45%;
-}
-
-.header__button-info button:last-child {
-  width: 30%;
 }
 
 .header .button__info {
@@ -3430,7 +3426,7 @@ template {
   border-color: #f906dd;
 }
 
-.instruction__row-body-text-left button {
+.instruction__button-reg-link-left {
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
@@ -4288,7 +4284,7 @@ template {
 }
 
 .button-grand-first {
-  padding: 13px 16px;
+  padding: 10px 13px;
   color: white;
   background-color: transparent;
   border: 1px solid transparent;
@@ -4540,11 +4536,11 @@ button:disabled {
     font-size: 17px;
   }
 
-  .header__button-info-lending button:first-child {
+  .header__button-info-lending .header__button-info-lending-btn:first-child {
     width: 50%;
   }
 
-  .header__button-info-lending button:last-child {
+  .header__button-info-lending .header__button-info-lending-btn:last-child {
     width: 31%;
   }
 
@@ -4796,11 +4792,11 @@ button:disabled {
     margin-top: 20px;
   }
 
-  .header__button-info-lending button:first-child {
+  .header__button-info-lending .header__button-info-lending-btn:first-child {
     width: 28%;
   }
 
-  .header__button-info-lending button:last-child {
+  .header__button-info-lending .header__button-info-lending-btn:last-child {
     width: 18%;
   }
 
@@ -5815,10 +5811,6 @@ button:disabled {
   }
 
   .header__menu-ul {
-    position: fixed;
-    z-index: 9999999;
-    top: 0;
-    left: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -5831,7 +5823,12 @@ button:disabled {
   }
 
   .header__menu {
-    display: none;
+    z-index: 9999999;
+    top: 150px;
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
   }
 
   .header__menu-li {
@@ -5862,30 +5859,8 @@ button:disabled {
     font-size: 20px;
   }
 
-  .header__menu-ul .header__menu-li:hover:first-child {
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    max-height: 200px;
-    -webkit-transition-delay: 0s;
-         -o-transition-delay: 0s;
-            transition-delay: 0s;
-  }
-
-  .header__menu-drop-mobile {
-    width: 100%;
-    margin-top: 15px;
-    background: rgba(6, 26, 98, 0.4);
-    padding: 10px 0px;
-    position: -webkit-sticky;
-    position: sticky;
-    opacity: 1;
-    visibility: visible;
-    border-radius: 0px;
-  }
-
-  .header__menu-drop-mobile li:last-child {
-    padding-bottom: 0px;
+  .add-li::before {
+    display: none;
   }
 
   .offers-title {
@@ -5895,6 +5870,15 @@ button:disabled {
 
   .offers-sub {
     font-size: 25px;
+  }
+
+  .header__menu-drop-mobile {
+    display: none;
+  }
+
+  .hidden-menu {
+    opacity: 0;
+    visibility: hidden;
   }
 
   .main .main__filters {
@@ -7010,11 +6994,11 @@ button:disabled {
     margin-bottom: 130px;
   }
 
-  .header__button-info-lending button:first-child {
+  .header__button-info-lending .header__button-info-lending-btn:first-child {
     width: 95%;
   }
 
-  .header__button-info-lending button:last-child {
+  .header__button-info-lending .header__button-info-lending-btn:last-child {
     width: 65%;
     margin-top: 20px;
   }
@@ -7170,11 +7154,11 @@ button:disabled {
     margin-top: 30px;
   }
 
-  .header__button-info-lending button:first-child {
+  .header__button-info-lending .header__button-info-lending-btn:first-child {
     width: 100%;
   }
 
-  .header__button-info-lending button:last-child {
+  .header__button-info-lending .header__button-info-lending-btn:last-child {
     width: 70%;
   }
 
@@ -7719,10 +7703,6 @@ button:disabled {
   .instruction__row-body-text-number-left {
     margin-right: 0px;
     margin-left: 30px;
-  }
-
-  .instruction__row-body-text:last-child .instruction__row-body-text-number {
-    width: 40px;
   }
 
   .instruction__row-body-text button {
@@ -9360,10 +9340,6 @@ button:disabled {
 
   .team__row-item-text-info-p {
     width: 80%;
-  }
-
-  .instruction__row-body-text:last-child .instruction__row-body-text-number {
-    width: 44px;
   }
 
   .login__row {
