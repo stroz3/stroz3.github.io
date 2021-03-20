@@ -413,6 +413,10 @@ template {
 .header {
   position: relative;
   height: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9999999;
 }
 
 .header .normal-row {
@@ -426,6 +430,7 @@ template {
 .header__lending {
   border-radius: 0px 0px 130px 130px;
   overflow: hidden;
+  position: relative;
 }
 
 .no-webp .header__blogers{
@@ -449,6 +454,9 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: margin 1s;
+  -o-transition: margin 1s;
+  transition: margin 1s;
 }
 
 .header__menu-ul {
@@ -592,7 +600,7 @@ template {
 
 .header__text {
   color: white;
-  margin-bottom: 85px;
+  margin-bottom: 95px;
 }
 
 .header__menu-mobile {
@@ -1614,7 +1622,7 @@ template {
 }
 
 .footer__menu {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1651,7 +1659,7 @@ template {
 }
 
 .footer__rights {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3301,7 +3309,7 @@ template {
   position: absolute;
   -webkit-animation: rotateRocket 45s linear infinite;
           animation: rotateRocket 45s linear infinite;
-  z-index: 9999;
+  z-index: 9;
 }
 
 .benefits__button-reg {
@@ -4625,6 +4633,45 @@ button:disabled {
 
 .selected {
   padding: 0px;
+}
+
+.no-webp .sticky{
+  background: url(../img/Заднийфоншапка.png) top/cover no-repeat; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  z-index: 9999999 !important;
+  border-radius: 20px;
+  border-radius: 0 0 60px 60px;
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
+}
+
+@-webkit-keyframes downheader {
+  0% {
+    margin-top: -100px;
+  }
+
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@keyframes downheader {
+  0% {
+    margin-top: -100px;
+  }
+
+  100% {
+    margin-top: 0px;
+  }
 }
 
 .choice {
@@ -7328,6 +7375,12 @@ button:disabled {
   .add-li::before {
     top: 10px;
   }
+
+  .sticky {
+    border-radius: 0 0 40px 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
 
 @media (max-width: 999px) {
@@ -7375,6 +7428,11 @@ button:disabled {
 
   .offers-sub {
     font-size: 20px;
+  }
+
+  .header .normal-row {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .header__text-title-lending {
@@ -7536,7 +7594,7 @@ button:disabled {
     position: absolute;
     top: 55px;
     left: -13px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 
   .footer__img img {
@@ -7557,7 +7615,7 @@ button:disabled {
     top: 0;
     position: absolute;
     width: 110%;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
   }
 
   .footer__li-link {
@@ -8477,7 +8535,7 @@ button:disabled {
   .footer__rights-contract {
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 
   .footer__rights-right {
@@ -8485,7 +8543,7 @@ button:disabled {
   }
 
   .footer__ul-li {
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     padding-top: 10px;
     padding-bottom: 10px;
     margin-right: 0px;
@@ -8493,7 +8551,7 @@ button:disabled {
   }
 
   .footer__ul-li:first-child {
-    border-top: 1px solid #ffffff;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
   }
 
   .footer__ul-li:nth-of-type(4),
@@ -9235,6 +9293,13 @@ button:disabled {
   .error-page__row {
     padding-top: 10px;
   }
+
+  .sticky {
+    border-radius: 0 0 30px 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -9287,6 +9352,14 @@ button:disabled {
 
   .normal-row .header__img-lending {
     display: block;
+  }
+
+  .sticky .header__img {
+    display: none;
+  }
+
+  .sticky {
+    border-radius: 0 0 25px 25px;
   }
 }
 
@@ -9938,3 +10011,5 @@ button:disabled {
 .webp .add-li::before{ background: url(../img/arrowrightlight.webp) no-repeat; }
 
 .webp .black-arrow::before{ background: url(../img/arrowright.webp) no-repeat; }
+
+.webp .sticky{ background: url(../img/Заднийфоншапка.webp) top/cover no-repeat; }
