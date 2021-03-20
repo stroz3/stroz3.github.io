@@ -906,16 +906,16 @@
                 menuBurger.style.top = '125px'
             }
         }
-        // window.onscroll = function () {
-        //     let scrolled = window.pageYOffset,
-        //         header = document.querySelector('.header__row');
-        //     if (scrolled) {
-        //         header.classList.add('sticky');
-        //     }
-        //     else {
-        //         header.classList.remove('sticky');
-        //     }
-        // };
+        window.onscroll = function () {
+            let scrolled = window.pageYOffset,
+                header = document.querySelector('.header__row');
+            if (scrolled) {
+                header.classList.add('sticky');
+            }
+            else {
+                header.classList.remove('sticky');
+            }
+        };
     </script>
 </body>
 
