@@ -655,15 +655,13 @@ template {
 .header__text-subtitle {
   font-family: "Montserrat-Light";
   font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 29px;
   letter-spacing: 0em;
   text-align: left;
 }
 
 .header__text-subtitleBlog {
-  font-family: "Montserrat-Light";
+  font-family: "Montserrat-Regular";
   font-size: 40px;
   line-height: 49px;
   margin-top: 0px;
@@ -712,6 +710,10 @@ template {
 
 .header__text-lending {
   margin-bottom: 65px;
+}
+
+.header__button-info-lending-btn button {
+  width: 100%;
 }
 
 @-webkit-keyframes arrow1 {
@@ -933,7 +935,6 @@ template {
 
 .target__circle-row {
   z-index: 999;
-  cursor: pointer;
   width: 90%;
   height: 90%;
   border-radius: 50%;
@@ -1190,6 +1191,14 @@ template {
     -webkit-transform: rotate(540deg);
             transform: rotate(540deg);
   }
+}
+
+.header__button-info-lending .header__button-info-lending-btn:first-child {
+  width: 50%;
+}
+
+.header__button-info-lending .header__button-info-lending-btn:last-child {
+  width: 31%;
 }
 
 .main__row {
@@ -3194,7 +3203,7 @@ template {
 }
 
 .benefits__row-body {
-  width: 78%;
+  width: 77%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -3257,7 +3266,7 @@ template {
 }
 
 .benefits__row-body-item-info-title-p {
-  font-family: "Montserrat-Medium";
+  font-family: "Montserrat-Regular";
   font-size: 17px;
   line-height: 24px;
   margin: 0;
@@ -3676,7 +3685,7 @@ template {
 .instruction__row-body-text-p {
   width: 80%;
   margin: 0;
-  font-family: "Montserrat-Medium";
+  font-family: "Montserrat-Regular";
   font-size: 17px;
   line-height: 21px;
 }
@@ -3772,7 +3781,7 @@ template {
 }
 
 .team__row-item-text-info-p {
-  font-family: "Montserrat-Medium";
+  font-family: "Montserrat-Regular";
   font-size: 20px;
   line-height: 24px;
   text-align: center;
@@ -4707,14 +4716,6 @@ button:disabled {
     font-size: 17px;
   }
 
-  .header__button-info-lending .header__button-info-lending-btn:first-child {
-    width: 50%;
-  }
-
-  .header__button-info-lending .header__button-info-lending-btn:last-child {
-    width: 31%;
-  }
-
   .header__img-info {
     width: 746px;
     height: 456px;
@@ -5559,7 +5560,7 @@ button:disabled {
 
   .benefits__row-body,
   .benefits__button-reg {
-    width: 90%;
+    width: 88%;
   }
 
   .benefits__button-reg button {
@@ -5686,15 +5687,15 @@ button:disabled {
   }
 
   .instruction__row-body-text:nth-of-type(5) {
-    -webkit-transform: translateX(-22%);
-        -ms-transform: translateX(-22%);
-            transform: translateX(-22%);
+    -webkit-transform: translateX(-20%);
+        -ms-transform: translateX(-20%);
+            transform: translateX(-20%);
   }
 
   .instruction__row-body-text:last-child {
-    -webkit-transform: translateX(-34%);
-        -ms-transform: translateX(-34%);
-            transform: translateX(-34%);
+    -webkit-transform: translateX(-31%);
+        -ms-transform: translateX(-31%);
+            transform: translateX(-31%);
   }
 
   .instruction__row-body-text-left:first-child {
@@ -5722,21 +5723,21 @@ button:disabled {
   }
 
   .instruction__row-body-text-left:nth-of-type(5) {
-    -webkit-transform: translateX(-4%);
-        -ms-transform: translateX(-4%);
-            transform: translateX(-4%);
+    -webkit-transform: translateX(-5%);
+        -ms-transform: translateX(-5%);
+            transform: translateX(-5%);
   }
 
   .instruction__row-body-text-left:nth-of-type(6) {
-    -webkit-transform: translateX(1%);
-        -ms-transform: translateX(1%);
-            transform: translateX(1%);
+    -webkit-transform: translateX(-1%);
+        -ms-transform: translateX(-1%);
+            transform: translateX(-1%);
   }
 
   .instruction__row-body-text-left:last-child {
-    -webkit-transform: translateX(61%);
-        -ms-transform: translateX(61%);
-            transform: translateX(61%);
+    -webkit-transform: translateX(58%);
+        -ms-transform: translateX(58%);
+            transform: translateX(58%);
   }
 
   .benefits__button-reg {
@@ -6933,7 +6934,7 @@ button:disabled {
 
   .benefits__button-reg,
   .benefits__row-body {
-    width: 87%;
+    width: 85%;
   }
 
   .benefits__row-body-item-info {
@@ -7115,9 +7116,9 @@ button:disabled {
   }
 
   .instruction__row-body-text-left:last-child {
-    -webkit-transform: translateX(26%);
-        -ms-transform: translateX(26%);
-            transform: translateX(26%);
+    -webkit-transform: translateX(26.5%);
+        -ms-transform: translateX(26.5%);
+            transform: translateX(26.5%);
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -8358,7 +8359,7 @@ button:disabled {
 
   .header__button-info-lending {
     margin-bottom: 50px;
-    width: 50%;
+    width: 225px;
   }
 
   .header__row-info-lending {
@@ -9373,7 +9374,7 @@ button:disabled {
   }
 
   .header__button-info-lending {
-    width: 67%;
+    width: 195px;
     margin-bottom: 20px;
   }
 
