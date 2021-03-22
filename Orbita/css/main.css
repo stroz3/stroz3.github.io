@@ -3243,6 +3243,9 @@ template {
   display: -ms-flexbox;
   display: flex;
   width: 75%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -3261,10 +3264,11 @@ template {
 
 .benefits__row-body-item-info {
   width: 100%;
+  min-height: 40%;
   border-right: 1px solid #aee3ff;
-  padding-right: 65px;
-  padding-left: 65px;
-  margin-top: 100px;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-top: 65px;
 }
 
 .benefits__row-body-item-info:first-child {
@@ -3550,9 +3554,9 @@ template {
 }
 
 .instruction__row-body-text:last-child {
-  -webkit-transform: translateX(-31%);
-      -ms-transform: translateX(-31%);
-          transform: translateX(-31%);
+  -webkit-transform: translateX(-20%);
+      -ms-transform: translateX(-20%);
+          transform: translateX(-20%);
 }
 
 .instruction__row-body-text:last-child .instruction__row-body-text-span {
@@ -3617,9 +3621,12 @@ template {
 }
 
 .instruction__row-body-text-left:nth-of-type(5) {
-  -webkit-transform: translateX(2%);
-      -ms-transform: translateX(2%);
-          transform: translateX(2%);
+  -webkit-transform: translateX(-7.5%);
+      -ms-transform: translateX(-7.5%);
+          transform: translateX(-7.5%);
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .instruction__row-body-text-left:nth-of-type(6) {
@@ -3798,6 +3805,10 @@ template {
   line-height: 24px;
   text-align: center;
   margin: 0;
+}
+
+.team__row-item-text-info-p a {
+  color: black;
 }
 
 @-webkit-keyframes pulse {
@@ -4639,25 +4650,6 @@ button:disabled {
   padding: 0px;
 }
 
-.no-webp .sticky{
-  background: url(../img/Заднийфоншапка.png) top/cover no-repeat; }
-
-.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  width: 100%;
-  z-index: 9999999 !important;
-  border-radius: 20px;
-  border-radius: 0 0 60px 60px;
-  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
-          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.35);
-}
-
 @-webkit-keyframes downheader {
   0% {
     margin-top: -100px;
@@ -4911,9 +4903,9 @@ button:disabled {
   }
 
   .instruction__row-body-text:last-child {
-    -webkit-transform: translateX(-53%);
-        -ms-transform: translateX(-53%);
-            transform: translateX(-53%);
+    -webkit-transform: translateX(-31%);
+        -ms-transform: translateX(-31%);
+            transform: translateX(-31%);
   }
 
   .instruction__row-body-text-left:first-child {
@@ -4953,9 +4945,9 @@ button:disabled {
   }
 
   .instruction__row-body-text-left:last-child {
-    -webkit-transform: translateX(81%);
-        -ms-transform: translateX(81%);
-            transform: translateX(81%);
+    -webkit-transform: translateX(-7%);
+        -ms-transform: translateX(-7%);
+            transform: translateX(-7%);
   }
 
   .forget__complete-img img {
@@ -5744,9 +5736,9 @@ button:disabled {
   }
 
   .instruction__row-body-text:last-child {
-    -webkit-transform: translateX(-31%);
-        -ms-transform: translateX(-31%);
-            transform: translateX(-31%);
+    -webkit-transform: translateX(-20%);
+        -ms-transform: translateX(-20%);
+            transform: translateX(-20%);
   }
 
   .instruction__row-body-text-left:first-child {
@@ -5786,9 +5778,9 @@ button:disabled {
   }
 
   .instruction__row-body-text-left:last-child {
-    -webkit-transform: translateX(58%);
-        -ms-transform: translateX(58%);
-            transform: translateX(58%);
+    -webkit-transform: translateX(-13.5%);
+        -ms-transform: translateX(-13.5%);
+            transform: translateX(-13.5%);
   }
 
   .benefits__button-reg {
@@ -5800,9 +5792,8 @@ button:disabled {
   }
 
   .benefits__row-body-item-info {
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-top: 80px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
   .instruction__row-img-left::before {
@@ -5819,6 +5810,9 @@ button:disabled {
   .team__row-item-img img {
     padding: 5px;
     width: 195px;
+    height: 195px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   .team__row {
@@ -5870,6 +5864,7 @@ button:disabled {
   .instruction::after {
     width: 172px;
     height: 172px;
+    right: 3%;
   }
 
   .small {
@@ -6965,6 +6960,10 @@ button:disabled {
     padding: 0px;
   }
 
+  .benefits__img {
+    right: -440px;
+  }
+
   .benefits__img::before {
     width: 615px;
     height: 555px;
@@ -6985,11 +6984,11 @@ button:disabled {
 
   .benefits__button-reg,
   .benefits__row-body {
-    width: 85%;
+    width: 95%;
   }
 
   .benefits__row-body-item-info {
-    padding-right: 37px;
+    padding-right: 35px;
   }
 
   .benefits__row-body-item:nth-of-type(2) .benefits__row-body-item-info {
@@ -7002,7 +7001,7 @@ button:disabled {
     margin-top: 30px;
     padding-left: 70px;
     margin-left: -71px;
-    padding-right: 60px;
+    padding-right: 50px;
     width: 100%;
     margin-bottom: 30px;
   }
@@ -7229,6 +7228,7 @@ button:disabled {
 
   .team__row-item-img img {
     width: 140px;
+    height: 140px;
   }
 
   .team__row-item {
@@ -7378,12 +7378,6 @@ button:disabled {
 
   .add-li::before {
     top: 10px;
-  }
-
-  .sticky {
-    border-radius: 0 0 40px 40px;
-    padding-top: 0px;
-    padding-bottom: 0px;
   }
 }
 
@@ -7890,8 +7884,6 @@ button:disabled {
   }
 
   .target__circle-text {
-    font-size: 8px;
-    line-height: 15px;
     width: 160px;
   }
 
@@ -8084,6 +8076,7 @@ button:disabled {
 
   .team__row-item-img img {
     width: 233px;
+    height: 233px;
   }
 
   .team__row-item-img {
@@ -8942,7 +8935,7 @@ button:disabled {
   }
 
   .target__circle-text {
-    font-size: 12px;
+    font-size: 15px;
     line-height: 16px;
     width: 250px;
   }
@@ -9149,6 +9142,7 @@ button:disabled {
 
   .team__row-item-img img {
     width: 286px;
+    height: 286px;
   }
 
   .target__circles {
@@ -9297,13 +9291,6 @@ button:disabled {
   .error-page__row {
     padding-top: 10px;
   }
-
-  .sticky {
-    border-radius: 0 0 30px 30px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 0px;
-  }
 }
 
 @media (max-width: 575px) {
@@ -9356,14 +9343,6 @@ button:disabled {
 
   .normal-row .header__img-lending {
     display: block;
-  }
-
-  .sticky .header__img {
-    display: none;
-  }
-
-  .sticky {
-    border-radius: 0 0 25px 25px;
   }
 }
 
@@ -9753,6 +9732,7 @@ button:disabled {
 
   .team__row-item-img img {
     width: 243px;
+    height: 243px;
   }
 
   .team__row-item-img {
@@ -10015,5 +9995,3 @@ button:disabled {
 .webp .add-li::before{ background: url(../img/arrowrightlight.webp) no-repeat; }
 
 .webp .black-arrow::before{ background: url(../img/arrowright.webp) no-repeat; }
-
-.webp .sticky{ background: url(../img/Заднийфоншапка.webp) top/cover no-repeat; }
