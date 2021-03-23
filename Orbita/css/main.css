@@ -3786,6 +3786,10 @@ template {
   background: -o-linear-gradient(225deg, #0fa4f2 0%, #f906dd 100%);
   background: linear-gradient(225deg, #0fa4f2 0%, #f906dd 100%);
   padding: 9px;
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .team__row-item-text-title {
@@ -5811,8 +5815,6 @@ button:disabled {
     padding: 5px;
     width: 195px;
     height: 195px;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
 
   .team__row {
