@@ -2,6 +2,7 @@
 .application {
     // .application__row
     background: url(../../img/main/form__back.png) top 50% left no-repeat;
+    background-size: cover;
     &__row {
         text-align: center;
         background: $button__color;
